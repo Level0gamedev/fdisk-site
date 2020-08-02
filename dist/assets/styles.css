@@ -1,0 +1,252 @@
+:root {
+	--bg: #F7F7F7;
+	--fg: #1A1A1A;
+	--bg_acc: #d4d4d4;
+	--fg_acc: #606060;
+	--magenta: #FF0090;
+	--cyan: #389DF2;
+	--yellow: #FDD000;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+body { 
+	font: 16px sans-serif; 
+	color: var(--fg); 
+	background-color: var(--bg);
+	max-width: 820px;
+	margin: 10px auto 0 auto;
+	line-height: 160%;
+} 
+
+nav ul {padding: 2 0 2 0; margin:0; padding-left:8px; font: 16px monospace;} 
+nav li { display: inline; }
+nav li li { display: block; }
+
+	
+header { margin: 0px 0px 0px 0px; }
+header img { max-width: 100%; }
+	
+main { 
+	border: 4px solid var(--fg); 
+	margin-top: 8px;
+	background-color: var(--bg);
+}
+main img {padding: 0}
+
+article {
+	padding: 10px 20px 10px 20px; 
+	line-height: 1.5em; 	
+}
+	
+main a[href*='//']::before { 
+	
+}
+main a:not[href*='//']::before { 
+	
+}
+
+
+h1 {margin-top: 0.2em  !important; }
+h2 { margin-bottom: 0.1em; }
+h1 span { font-size: 0.6em; font-weight: normal; line-height: 1.5;  display:block; margin-bottom: 1.2em; color: var(--fg_acc); }
+
+pre, code { background-color: var(--bg_acc);  }
+pre { padding: 16px; }
+code { padding: 4px; font-size: 0.8em; line-height: 1.8;  white-space: break-spaces; }
+	
+	
+	
+a { color: var(--fg); text-decoration: none; }
+
+	
+figure { margin: 0; }
+
+figcaption { margin-bottom: 40px; }
+	img {max-width: 100%; }
+	blockquote { font-size: 1.4em; font-style: italic; line-height: 1.4em; margin-left: 0.8em; width: 70%; min-width: 400px; }
+	blockquote p { margin-bottom: 0; }
+	blockquote cite { font-size: 0.6em; margin-left: 1em; color: var(--fg_acc); }
+	blockquote a { color: var(--fg_acc); font-weight: normal; }
+
+table { width: 100%; }
+table, th, td { text-align: left; }
+td, th { padding: 6px; }
+	
+	
+footer { margin-top: 10px }
+footer img { width: 1.2em; }
+footer section > * { display: inline-block; margin-right: 0; font: 14px sans-serif; }
+footer section img { width: 30px; margin-bottom: 50px; }
+footer section a { background: none !important; padding: 0 !important; }
+	
+table, th, td {
+	border: none;
+	padding: 0;
+	margin: 0;
+	table-layout:fixed;
+}
+
+.logo {
+	width:40px; 
+	height:40px; 
+	margin-right:8px; 
+	background-color:var(--bg);
+}
+
+.shadow { position: relative;}	
+.shadow:after {
+        background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQImWNgYGD4z4AMAA4EAQAvGW0PAAAAAElFTkSuQmCC);
+		background-position: right bottom;
+		background-repeat: repeat;
+        height: 100%;
+        width: 100%;
+        content: " ";
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        z-index: -1;
+}
+
+.shadowPlus4:after {
+		background-origin: border-box;
+        height: calc(100% + 5.1px);
+        width: calc(100% + 4px);
+}
+		
+.shadow1 {
+	-webkit-box-shadow: 5px  5px var(--bg_acc);
+	box-shadow: 5px  5px var(--bg_acc);
+}
+
+.zoom {
+	transition: all 1s;
+	transform-origin: 50% 50%;
+}
+	
+.zoom:hover {
+	transform: scale(1.3);
+}
+	
+.blink_me {
+	animation: blinker 1.2s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+	opacity: 0;
+	}	
+}
+	
+.back-to-top {
+	margin-top: 5px;
+	margin-right: 1px;
+	width: 1.4em;
+	float: right;
+	transition: all 1s;
+	transform-origin: 50% 50%;
+}
+.back-to-top:hover {
+transform: scale(1.3);
+}
+
+	.wave {
+		color: var(--fg);
+		border-bottom: 0;
+		padding-bottom: 0.1em;
+		text-decoration: none; 				
+	}
+	
+	.wave1:hover {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FDD000' stroke-width='2.5' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 2ex;				
+	}
+	
+	.wave2:hover { 
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23389DF2' stroke-width='2.5' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 2ex;				
+	}
+	
+	.wave3:hover {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FF0090' stroke-width='2.5' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		background-size: 2ex;				
+	}
+	
+	.bloop1 a { 
+		font-weight: bold; 	
+		background:
+			linear-gradient(
+			   to right, 
+			   #FDD000 0%,
+			   #FDD000 100%
+			 );
+		background-position: 0 50%;
+		background-repeat: repeat-x;
+		text-decoration: none;
+		color: var(--bg); 
+		background-size: 0px 0px;
+		transition: background-size .2s;
+	}
+	.bloop1 a:hover { 
+		background-size: 4px 1em;
+		color: var(--fg);
+	}
+	
+	.bloop2 a { 
+		font-weight: bold; 	
+		background:
+			linear-gradient(
+			   to right, 
+			   #389DF2 0%,
+			   #389DF2 100%
+			 );
+		background-position: 0 50%;
+		background-repeat: repeat-x;
+		text-decoration: none;
+		color: var(--bg); 
+		background-size: 0px 0px;
+		transition: background-size .2s;
+	}
+	.bloop2 a:hover { 
+		background-size: 4px 1em;
+		color: var(--fg);
+	}
+	
+	.bloop3 a { 
+		font-weight: bold; 	
+		background:
+			linear-gradient(
+			   to right, 
+			   #FF0090 0%,
+			   #FF0090 100%
+			 );
+		background-position: 0 50%;
+		background-repeat: repeat-x;
+		text-decoration: none;
+		color: var(--bg); 
+		background-size: 0px 0px;
+		transition: background-size .2s;
+	}
+	.bloop3 a:hover { 
+		background-size: 4px 1em;
+		color: var(--fg);
+	}
+	
+	.text1:hover{
+		 color: var(--yellow);
+	}
+	.text2:hover{
+		 color: var(--cyan);
+	}	
+	.text3:hover{
+		 color: var(--magenta);
+	}
+	

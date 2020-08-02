@@ -1,0 +1,39 @@
+---json
+{
+  "permalink": "rss.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "nchrs.xyz",
+    "subtitle": "Journal entries on project updates, thoughts and musings.",
+    "url": "https://nchrs.xyz",
+    "feedUrl": "https://nchrs.xyz/rss.xml",
+    "author": {
+      "name": "Clemens Scott",
+      "email": "clemens@brokenrul.es"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.all | rssLastUpdatedDate }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for entry in collections.journal %}
+  {% set absolutePostUrl %}{{ entry.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ entry.data.eleventyNavigation.key }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ entry.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ entry.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>
