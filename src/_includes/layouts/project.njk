@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+{% if year  %}
+  <h3>{{ year }}</h3>
+{% else %}
+  <h3>{{ order }}</h3>
+{% endif %}
+{{ content | safe }}
+{%- for img in images.files %}
+  <figure>
+    <a href="/img/{{ images.path }}/{{ img.src }}"><img src="/img/{{ images.path }}/{{ img.src }}" alt="{{ img.alt }}" /></a>
+    {% if img.cap %}<figcaption><em>{{ img.cap | safe }}</em></figcation>{% endif %}
+  </figure>
+
+{%- endfor %}
