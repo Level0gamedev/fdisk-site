@@ -3,7 +3,7 @@ layout: layouts/page.njk
 hideTitle: true
 navi:
   key: test4
-  parent: test3
+  parent: test
 
 ---
 

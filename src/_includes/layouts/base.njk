@@ -2,6 +2,7 @@
 {% set updated = page.inputPath | stat("mtime") | nchrsDate%}
 {% set highlight_col = ['var(--magenta)', 'var(--cyan)', 'var(--yellow)'] | random %}
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,18 +27,18 @@
 
 
 <body>
-	<section style="display:flex;">
+	<header style="display:flex;">
      <a href="/" class="shadow logo"><img src="{{ "/" | url }}assets/icons/fb_logo.svg" width="40px" style="max-height:40px;" /></a>
       <div style="max-height:40px; display:flex; flex:1;  align-items:flex-end; background:var(--fg); color:var(--bg);" class="shadow">
 		<nav style="margin:3px;">
 			{% set path = collections.all | naviBreadcrumb(navi.key) %}
-			<ul><li>//</li>{% set skip = 0 %}{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(skip) | random %}<li class="bloop{{ kolor }}"><a href="{{ dir.url }}">{{ dir.key }}</a>/</li>{% set skip = kolor %}{%- endfor %}<li>{{navi.key}}</li>:<span class="blink_me">_</span></ul>
+			<ul><li>//</li>{% set skip = 0 %}{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(skip) | random %}<li class="bloop-base bloop{{ kolor }}"><a href="{{ dir.url }}">{{ dir.key }}</a>/</li>{% set skip = kolor %}{%- endfor %}<li>{{navi.key}}</li>:<span class="blink_me">_</span></ul>
 		</nav>
       </div>
-    </section>
+    </header>
 
 	 <main class="shadow shadowPlus4">
-	 	{% if navi.cover %}<header><img src="{{ navi.cover }}" /></header>{% endif %}
+	 	{% if navi.cover %}<section><img src="{{ navi.cover }}" /></section>{% endif %}
 	
 	<article>
 		
@@ -70,9 +71,9 @@
 			</div>
 			
 			<div style="float: right; margin-top: 0px;">
-			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img class="zoom" src="{{ "/" | url }}assets/icons/cc.svg" /></a>
-			<a href="http://webring.xxiivv.com/"><img class="zoom" src="{{ "/" | url }}assets/icons/rotonde.svg" /></a>
-			<a rel="me" href=https://merveilles.town/@FredBednarski><img class="zoom" src="{{ "/" | url }}assets/icons/merveilles.svg" /></a>
+			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img  src="{{ "/" | url }}assets/icons/cc.svg" /></a>
+			<a href="http://webring.xxiivv.com/"><img  src="{{ "/" | url }}assets/icons/rotonde.svg" /></a>
+			<a rel="me" href=https://merveilles.town/@FredBednarski><img src="{{ "/" | url }}assets/icons/merveilles.svg" /></a>
 			</div>
 		</section>
 	</footer>	

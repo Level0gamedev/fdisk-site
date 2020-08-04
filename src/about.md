@@ -7,7 +7,7 @@ navi:
   excerpt: What is this about?
 templateEngineOverride: njk,md
 ---
-# What do you do?
+### What do you do?
 
 Let's do some things!
 

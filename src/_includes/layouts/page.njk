@@ -10,13 +10,12 @@ layout: layouts/base.njk
 {% endif %}
 
 {%- for item in listing  %}
-{% set x =  [1, 2, 3 ] | random %}
-{% set y =  [1, 2, 3 ] | removeVal(x) | random %}
+{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
 
 {% if item.altTitle %}
-	<h2><a class="wave wave{{x}} text{{y}}" href="{{ item.url }}" >{{ item.altTitle }}</a></h2>
+	<h2 class="bloop-base bloop{{kolor}}"><a href="{{ item.url }}" >{{ item.altTitle }}</a></h2>
 {% else %}
-	<h2><a class="wave wave{{x}} text{{y}}" href="{{ item.url }}">{{ item.title | splitWords | capitalize }}</a></h2>
+	<h2 class="bloop-base bloop{{kolor}}"><a href="{{ item.url }}">{{ item.title | splitWords | capitalize }}</a></h2>
 {% endif %}
 
   {% if item.cover and not hideCovers %}
