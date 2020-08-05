@@ -1,7 +1,10 @@
 ---
 layout: layouts/page.njk
-hideTitle: true
+altTitle: "~welcome"
 navi:
   key: ƒdisk
+  description: "ƒdisk is a virtual library of projects, narratives, and experiments."
 ---
+
+
 

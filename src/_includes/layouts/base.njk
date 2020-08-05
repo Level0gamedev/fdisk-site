@@ -22,6 +22,7 @@
 		::selection {
 		  background: {{ highlight_col }};
 		}
+		
 	</style>
 </head>
 
@@ -44,10 +45,10 @@
 		
 		{% if hideTitle %}
 		{% else %}
-		  {% if navi.excerpt and not navi.hideExcerpt %}{% set excerpt = ("<span>" + navi.excerpt + "</span>") | safe %}
+		  {% if navi.description and not navi.hideExcerpt %}{% set excerpt = ("<span>" + navi.description + "</span>") | safe %}
 		  {% else %}{% set excerpt = "" %}
 		  {% endif %}
-		  {% if navi.altTitle %}<h1>{{ navi.altTitle }}{{ excerpt }}</h1>
+		  {% if altTitle %}<h1>{{ altTitle }}{{ excerpt }}</h1>
 		  {% else %}<h1>{{ page.url | urlToTitle | splitWords | capitalize }}{{ excerpt }}</h1>
 		  {% endif %}
 		{% endif %}
