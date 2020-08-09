@@ -2,7 +2,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,42 +15,49 @@
 	<link rel="icon" type="image/png" href="/assets/icons/favicon.png"/>
 	<style>
 		::-moz-selection { /* Code for Firefox */
-		  background: var(--yellow);
+		  background: var(--cyan);
+		  -moz-opacity: 0.5;
 		}
 
 		::selection {
-		  background: var(--yellow);
-		}
-		
+		  background: var(--cyan);
+		  opacity: 0.5;
+		}	
 	</style>
 </head>
 
 
 <body>
+	
 	<header style="display:flex;">
-     <a href="/" class="shadow logo"><img src="/assets/icons/fb_logo.svg" width="40px" style="max-height:40px;" /></a>
+     <a href="/" class="shadow logo"><img src="/assets/icons/fb_logo.svg" width="40px" class="bloop-base bloop1"  /></a>
       <div style="max-height:40px; display:flex; flex:1;  align-items:flex-end; background:var(--fg); color:var(--bg);" class="shadow">
-		<nav style="margin:3px;">
+		<nav class="top-menu">
 			
-			<ul><li>//</li><li class="bloop-base bloop3"><a href="/">ƒdisk</a>/</li><li>about</li>:<span class="blink_me">_</span></ul>
+			<ul><li>//</li><li><a class="bloop-base bloop2" href="/">ƒdisk</a>/</li><li>about</li>:<span class="blink_me">_</span></ul>
 		</nav>
       </div>
     </header>
 
-	 <main class="shadow shadowPlus4">
-	 	
+		
+		
+
+
+
+
+<main class="shadow shadowPlus4">
 	
+
 	<article>
 		
 		
 		  
 		  
-		  <h1>About</h1>
+		  <h1>About<span>What is this about?</span></h1>
 		  
 		
 		
-		
-<h3>What do you do?</h3>
+		<h3>What do you do?</h3>
 <p>Let's do some things!</p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer  interdum sit amet arcu quis laoreet. Etiam vel justo vel velit vulputate  tristique a quis purus. Morbi euismod quam nec finibus elementum.  Maecenas in nunc risus. Nam id congue leo, non fringilla turpis. Ut  rhoncus ante mi. Morbi eget purus sed diam scelerisque convallis. Donec  dictum, quam vel malesuada viverra, tellus ante auctor ante, et  vestibulum turpis nulla non leo. Donec sit amet placerat massa. Interdum  et malesuada fames ac ante ipsum primis in faucibus. Sed eros tortor,  mattis eu porta eget, porttitor et quam. Cras ac fermentum nulla, non  posuere libero. Class aptent taciti sociosqu ad litora torquent per  conubia nostra, per inceptos himenaeos. Nam posuere pretium diam.  Integer ut sem lacinia, tincidunt neque sed, aliquet erat. Nullam eget  eleifend erat.</p>
 <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per  inceptos himenaeos. Suspendisse nec magna vitae quam condimentum  dapibus. Donec convallis, enim quis mollis suscipit, magna metus dapibus  nisi, sit amet dictum eros ligula in lacus. Etiam dignissim nisl quis  quam eleifend, at commodo lectus semper. Praesent suscipit purus at  imperdiet ornare. Aliquam at pulvinar odio. Phasellus in ullamcorper  tellus. Praesent eget tortor at felis laoreet laoreet. Integer commodo  fermentum maximus. Donec pellentesque felis vulputate vulputate maximus.</p>
@@ -59,27 +65,29 @@
 <p>Nunc eget suscipit est. Cras tempus mi nulla, id scelerisque neque  ornare et. Nullam fermentum purus a leo ullamcorper feugiat. Nullam id  ante sed lectus malesuada placerat tincidunt quis sem. Nullam a nisl non  magna imperdiet pretium vel et mauris. Integer auctor mauris nec  ullamcorper fermentum. Nunc ex dui, elementum quis iaculis eu, tempor eu  mi. Sed id ligula lectus. Orci varius natoque penatibus et magnis dis  parturient montes, nascetur ridiculus mus. Curabitur ut rutrum mi. Duis  in ipsum quam. Nulla vel condimentum lectus. Nunc pellentesque congue  nisl sit amet sollicitudin. Cras porttitor dolor nec nulla tempor  feugiat.</p>
 <p>Fusce id sodales massa. Donec semper mattis mi, a sodales nulla  tristique sit amet. Nam vitae augue ut urna pellentesque gravida. Proin  interdum nibh velit. Ut non ultrices mauris. Nulla id mauris risus.  Donec laoreet, nisl id consequat pretium, est erat ullamcorper mi, sed  placerat velit mi ut justo.</p>
 
-
-  
-
-
-
-
-	<h2 class="bloop-base bloop2"><a href="/aboutsite/">This_site</a></h2>
-
-
-  
-    <em>What is this about?</em>
-   
-		</article>
 		
-		<hr style="border: 1px dotted; border-style: none none dotted; margin-bottom: 0px;" />
+	</article>
+	
+	<hr style="border: 1px dotted; border-style: none none dotted; margin-bottom: 0px;" />
+	
+	<div style="margin-bottom:1px; margin-top: -2px; margin-left:10px;"><span style="font-size: 12px;">
+	>> created on 20.08.02
+	</span><a href="#"><img class = "back-to-top icon" src="/assets/icons/arrow_up.svg" /></a></div>
+</main>
+
+<nav>
+	
+	  
+	
+	
+
+	
+		<h2><a href="/aboutsite/" class="bloop-base bloop1">This_site</a><span>What is this about?</span></h2>
+	
+
+	  
+</nav>
 		
-		<div style="margin-bottom:1px; margin-top: -2px; margin-left:10px;"><span style="font: 10px sans-serif;">
-		>> created on 200802
-		
-		</span><a href="#"><img class = "back-to-top" src="/assets/icons/arrow_up.svg" /></a></div>
-	</main>
 
 	<footer>
 		
@@ -89,9 +97,9 @@
 			</div>
 			
 			<div style="float: right; margin-top: 0px;">
-			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img  src="/assets/icons/cc.svg" /></a>
-			<a href="http://webring.xxiivv.com/"><img  src="/assets/icons/rotonde.svg" /></a>
-			<a rel="me" href=https://merveilles.town/@FredBednarski><img src="/assets/icons/merveilles.svg" /></a>
+			<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img  src="/assets/icons/cc.svg" /></a>
+			<a class="icon" href="http://webring.xxiivv.com/"><img  src="/assets/icons/rotonde.svg" /></a>
+			<a class="icon" rel="me" href=https://merveilles.town/@FredBednarski><img src="/assets/icons/merveilles.svg" /></a>
 			</div>
 		</section>
 	</footer>	

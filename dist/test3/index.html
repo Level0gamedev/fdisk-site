@@ -2,7 +2,6 @@
 
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,51 +15,62 @@
 	<link rel="icon" type="image/png" href="/assets/icons/favicon.png"/>
 	<style>
 		::-moz-selection { /* Code for Firefox */
-		  background: var(--cyan);
+		  background: var(--yellow);
+		  -moz-opacity: 0.5;
 		}
 
 		::selection {
-		  background: var(--cyan);
-		}
-		
+		  background: var(--yellow);
+		  opacity: 0.5;
+		}	
 	</style>
 </head>
 
 
 <body>
+	
 	<header style="display:flex;">
-     <a href="/" class="shadow logo"><img src="/assets/icons/fb_logo.svg" width="40px" style="max-height:40px;" /></a>
+     <a href="/" class="shadow logo"><img src="/assets/icons/fb_logo.svg" width="40px" class="bloop-base bloop2"  /></a>
       <div style="max-height:40px; display:flex; flex:1;  align-items:flex-end; background:var(--fg); color:var(--bg);" class="shadow">
-		<nav style="margin:3px;">
+		<nav class="top-menu">
 			
-			<ul><li>//</li><li class="bloop-base bloop3"><a href="/test/">test</a>/</li><li>test3</li>:<span class="blink_me">_</span></ul>
+			<ul><li>//</li><li><a class="bloop-base bloop1" href="/test/">test</a>/</li><li>test3</li>:<span class="blink_me">_</span></ul>
 		</nav>
       </div>
     </header>
 
-	 <main class="shadow shadowPlus4">
-	 	
+		
+		
+
+
+
+
+<main class="shadow shadowPlus4">
 	
+
 	<article>
 		
 		
 		
 		
-		
-<p>Testing some more stuff</p>
+		<p>Testing some more stuff</p>
 
-
-  
-
-		</article>
 		
-		<hr style="border: 1px dotted; border-style: none none dotted; margin-bottom: 0px;" />
+	</article>
+	
+	<hr style="border: 1px dotted; border-style: none none dotted; margin-bottom: 0px;" />
+	
+	<div style="margin-bottom:1px; margin-top: -2px; margin-left:10px;"><span style="font-size: 12px;">
+	>> created on 20.08.02, last update on 20.08.04
+	</span><a href="#"><img class = "back-to-top icon" src="/assets/icons/arrow_up.svg" /></a></div>
+</main>
+
+<nav>
+	
+	  
+	
+</nav>
 		
-		<div style="margin-bottom:1px; margin-top: -2px; margin-left:10px;"><span style="font: 10px sans-serif;">
-		>> created on 200802
-		, last update on 200804
-		</span><a href="#"><img class = "back-to-top" src="/assets/icons/arrow_up.svg" /></a></div>
-	</main>
 
 	<footer>
 		
@@ -70,9 +80,9 @@
 			</div>
 			
 			<div style="float: right; margin-top: 0px;">
-			<a href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img  src="/assets/icons/cc.svg" /></a>
-			<a href="http://webring.xxiivv.com/"><img  src="/assets/icons/rotonde.svg" /></a>
-			<a rel="me" href=https://merveilles.town/@FredBednarski><img src="/assets/icons/merveilles.svg" /></a>
+			<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img  src="/assets/icons/cc.svg" /></a>
+			<a class="icon" href="http://webring.xxiivv.com/"><img  src="/assets/icons/rotonde.svg" /></a>
+			<a class="icon" rel="me" href=https://merveilles.town/@FredBednarski><img src="/assets/icons/merveilles.svg" /></a>
 			</div>
 		</section>
 	</footer>	

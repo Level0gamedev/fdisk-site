@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
 		mm = mm < 10 ? zero.concat(mm.toString()) : mm.toString()
 		let dd = date.getDate()
 		dd = dd < 10 ? zero.concat(dd.toString()) : dd.toString()
-		return yy.concat(mm).concat(dd)
+		return yy.concat("." + mm).concat("." + dd)
 	});
 
   eleventyConfig.addFilter("urlToTitle", function(path) {
@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
     // e.g. projects/games/oldMansJourney/ returns oldMansJourney
     let folders = path.split("/")
     folders = folders.slice(1,folders.length - 1)
-    return folders.length > 0 ? folders[folders.length - 1] : "nchrs"    
+    return folders.length > 0 ? folders[folders.length - 1] : "ƒdisk"    
   })
 
   eleventyConfig.addFilter("splitWords", function(str) {

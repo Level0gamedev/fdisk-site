@@ -1,10 +1,14 @@
 ---
 layout: layouts/page.njk
-altTitle: "~welcome"
+hideTitle: false
+altTitle: ƒdisk
 navi:
   key: ƒdisk
-  description: "ƒdisk is a virtual library of projects, narratives, and experiments."
+  excerpt: ƒdisk is a virtual library of projects, narratives, and experiments.
 ---
+
+
+Nam id congue leo, non fringilla turpis. Ut  rhoncus ante mi. Morbi eget purus sed diam scelerisque convallis. Donec  dictum, quam vel malesuada viverra, tellus ante auctor ante, et  vestibulum turpis nulla non leo. Donec sit amet placerat massa. 
 
 
 
