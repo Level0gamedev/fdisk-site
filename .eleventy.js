@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("nchrsDate", function(date) {
 	  // returns the date in YYMMDD format
 		const zero = "0"
-		const yy = date.getFullYear().toString().slice(2,4)
+		const yy = date.getFullYear().toString()
 		let mm = date.getMonth() + 1
 		mm = mm < 10 ? zero.concat(mm.toString()) : mm.toString()
 		let dd = date.getDate()
@@ -30,7 +30,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("splitWords", function(str) {
     // finds uppercase letters in camel case strings and inserts a whitespace character
     // e.g. oldMansJourney returns old Mans Journey
-    return str.replace(/([A-Z])/g, ' $1')  
+    return str.replace(/([A-Z])/g,' $1')  
   })
 
   eleventyConfig.addFilter("capitalize", function(str) {

@@ -24,36 +24,40 @@ layout: layouts/base.njk
 		{{ content | safe }}
 		
 	</article>
-	
-	<hr style="border: 1px dotted; border-style: none none dotted; margin-bottom: 0px;" />
-	
+	<hr class="divider" />
 	<div style="margin-bottom:1px; margin-top: -2px; margin-left:10px;"><span style="font-size: 12px;">
-	>> created on {{ created }}{% if created!=updated %}, last update on {{ updated }}{% endif %}
+	>> page created on {{ created }}{% if created!=updated %} &Delta; {{ updated }}{% endif %}
 	</span><a href="#"><img class = "back-to-top icon" src="{{ "/" | url }}assets/icons/arrow_up.svg" /></a></div>
 </main>
 
-<nav>
-	{% if navi.reverse %}
-	  {% set listing = collections.all | navi(navi.key) | reverse %}
-	{% else %}
-	  {% set listing = collections.all | navi(navi.key) %}
-	{% endif %}
 
-	{%- for item in listing  %}
-	{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
+{% if navi.reverse %}
+  {% set listing = collections.all | navi(navi.key) | reverse %}
+{% else %}
+  {% set listing = collections.all | navi(navi.key) %}
+{% endif %}
 
-	{% if item.altTitle %}
-		<h2><a href="{{ item.url }}" class="bloop-base bloop{{kolor}}">{ item.altTitle }}</a><span>{{ item.excerpt }}</span></h2>
-	{% else %}
-		<h2><a href="{{ item.url }}" class="bloop-base bloop{{kolor}}">{{ item.title | splitWords | capitalize }}</a><span>{{ item.excerpt }}</span></h2>
-	{% endif %}
+{% if listing.length %}
+			
+<nav class="flex-container" style="margin-top: 20px; margin-bottom: -1em;">
+		{%- for item in listing  %}
+			{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
+			
+			{%if item.excerpt %}
+				{% set excerpt = " — " + item.excerpt %}
+			{% endif %}
 
-	  {% if item.cover and not hideCovers %}
-	  <figure>
-		<a href="{{ item.url }}"><img src="{{ item.cover }}" /></a>
-		<figcaption><em>{{ item.excerpt}}</em></figcaption>
-	  </figure>
-	   {% endif %}
-
-	{%- endfor%}
+			{% if item.altTitle %}
+				{% set title = item.altTitle %}
+			{% else %}
+				{% set title = item.title | splitWords | capitalize %}
+			{% endif %}
+			
+			<article class="grid-card bloop-base bloop{{kolor}}">
+			<a href="{{ item.url }}"><img src="https://apiellugar.nyc3.digitaloceanspaces.com/media/images/Pullfrog20200731194020.png"><div class="grid-card-info">{{ title }}</div></a>
+			</article>
+			
+		{%- endfor%}
 </nav>
+
+{% endif %}
