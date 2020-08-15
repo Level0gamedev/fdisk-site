@@ -62,7 +62,7 @@ layout: layouts/base.njk
 				{% endif %}
 				
 				<a href="{{ item.url }}" ><li class="bg{{kolor}}">		
-				<img src="{{ "/" | url }}assets/icons/ico_folder.png" />&nbsp;{{ title }} <span>{{ excerpt }}</span>
+				<img src="{{ "/" | url }}assets/icons/ico_folder.png" />&nbsp;{{ title }}&nbsp;<span>{{ excerpt }}</span>
 				<time>{{ item.page.date | nchrsDate}}</time></li></a>
 						
 			{%- endfor%}
