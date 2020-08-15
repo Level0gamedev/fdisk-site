@@ -1,6 +1,6 @@
 {% set highlight_col = ['var(--magenta)', 'var(--cyan)', 'var(--yellow)'] | random %}
 
-
+{% set kolor = [1, 2, 3 ] | random %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,15 +26,15 @@
 	</style>
 </head>
 
+{% set kolor = [1, 2, 3 ] | random %}
 
 <body>
-	{% set kolor = [1, 2, 3 ] | random %}
-	<header style="display:flex;">
-     <a href="/" class="shadow logo"><img src="{{ "/" | url }}assets/icons/fb_logo.svg" width="40px" class="bloop-base bloop{{kolor}}"  /></a>
-      <div style="max-height:40px; display:flex; flex:1;  align-items:flex-end; background:var(--fg); color:var(--bg);" class="shadow">
+	<header>
+     <a href="/" class="shadow logo"><img src="{{ "/" | url }}assets/icons/fb_logo.svg" width="40px" class="bg{{kolor}}" /></a>
+      <div class="top-bar shadow">
 		<nav class="top-menu">
 			{% set path = collections.all | naviBreadcrumb(navi.key) %}
-			<ul><li>//</li>{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(kolor) | random %}<li><a class="bloop-base bloop{{ kolor }}" href="{{ dir.url }}">{{ dir.key }}</a>/</li>{% set skip = kolor %}{%- endfor %}<li>{{navi.key}}</li>:<span class="blink_me">_</span></ul>
+			<ul><li>//</li>{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(kolor) | random %}<li><a class="text{{ kolor }}" href="{{ dir.url }}">{{ dir.key }}</a>/</li>{%- endfor %}<li>{{navi.key}}</li>:<span class="blink_me">_</span></ul>
 		</nav>
       </div>
     </header>
@@ -42,15 +42,13 @@
 		
 		{{ content | safe }}
 		
-
+		
 	<footer>		
 		<section>
 			<div style="float: left; margin-top: -3px; ">
 			Made with <span title="...and a lot of trial and error">&#9825</span> by Fred Bednarski &copy; {{ page.date.getFullYear() }}
-			</div>
-			
+			</div>	
 			<div style="float: right; margin-top: 0px;">
-			<a class="icon" href="https://creativecommons.org/licenses/by-nc-sa/4.0"><img  src="{{ "/" | url }}assets/icons/cc.svg" /></a>
 			<a class="icon" href="http://webring.xxiivv.com/"><img  src="{{ "/" | url }}assets/icons/rotonde.svg" /></a>
 			<a class="icon" rel="me" href=https://merveilles.town/@FredBednarski><img src="{{ "/" | url }}assets/icons/merveilles.svg" /></a>
 			</div>

@@ -2,6 +2,7 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 date: Last Modified
+altTitle: Projekty
 navi:
   key: projects
   parent: ƒdisk
