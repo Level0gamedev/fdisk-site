@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
 		mm = mm < 10 ? zero.concat(mm.toString()) : mm.toString()
 		let dd = date.getDate()
 		dd = dd < 10 ? zero.concat(dd.toString()) : dd.toString()
-		return yy.concat("." + mm).concat("." + dd)
+		return yy.concat(mm).concat(dd)
 	});
 
   eleventyConfig.addFilter("urlToTitle", function(path) {
@@ -48,6 +48,10 @@ module.exports = function(eleventyConfig) {
 		}
 	}
     return arr
+  })
+  
+  eleventyConfig.addFilter("newestDate", function(arr) {
+	return Math.max.apply(null,arr);
   })
   
    eleventyConfig.addNunjucksAsyncFilter("stat", (file, prop="birthtime", callback) => {

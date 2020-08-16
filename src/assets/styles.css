@@ -7,7 +7,7 @@
 	--cyan: #389DF2;
 	--yellow: #FDD000;
 	--bg_shadow: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQImWNgYGD4z4AMAA4EAQAvGW0PAAAAAElFTkSuQmCC);
-	--font_sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	--font_sans: -apple-system, BlinkMacSystemFont, "Fira Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 	--font_mono: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
 }
 html {scroll-behavior: smooth;}
@@ -48,7 +48,7 @@ article p a:hover { background-color: var(--fg); color: var(--bg_acc);}
 
 main nav ul{list-style-type: none; margin: 0; padding: 0;  font-size: 16px; font-weight: bold; width: 100%;}
 main nav span {font-weight: 400; font-size: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-main nav time {margin-left: auto; font-weight: 400; font-size: 80%; display: block;}
+main nav time {margin-left: auto; font-weight: 400; font-size: 80%; display: block; color:var(--fg_acc);}
 main nav img {width: 24px; height: 24px;}
 main nav li {display:flex; padding: 2px 8px;} 
 
@@ -66,18 +66,7 @@ footer section img { width: 30px; }
 .logo {height:40px; margin-right:10px; background-color:var(--bg);}
 
 .shadow { position: relative; }	
-.shadow:after {
-        background:var(--bg_shadow);
-		background-position: right bottom;
-		background-repeat: repeat;
-        height: 100%;
-        width: 100%;
-        content: " ";
-        position: absolute;
-        left: 7px;
-        top: 8px;
-        z-index: -1;
-}
+.shadow:after {background:var(--bg_shadow); background-position: right bottom; background-repeat: repeat; height: 100%; width: 100%; content: " "; position: absolute; left: 7px; top: 8px; z-index: -1;}
 .shadowPlus4:after {height: calc(100% + 5.1px); width: calc(100% + 5.1px);}
 
 .icon:hover{opacity: 0.5;}

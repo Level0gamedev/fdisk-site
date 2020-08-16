@@ -4,6 +4,17 @@ layout: layouts/base.njk
 
 {% set created = page.inputPath | stat("birthtime") | nchrsDate %}
 {% set updated = page.inputPath | stat("mtime") | nchrsDate%}
+{% set lastDate = [] %}
+{% macro renderNavListItem(entry) -%}
+{% set title = entry.key | safe | splitWords | capitalize %}
+{% set smolDate = entry.page.date | nchrsDate %}
+{% set lastDate = lastDate.push(smolDate) %}
+{% if entry.children.length %}
+{% for child in entry.children %}
+{{ renderNavListItem(child) }}
+{% endfor -%}
+{%- endif -%}
+{%- endmacro %}
 
 <main class="shadow shadowPlus4">
 	{% if navi.cover %}<section><img src="{{ navi.cover }}" /></section>{% endif %}
@@ -27,10 +38,9 @@ layout: layouts/base.njk
 	
 	{# Navigation starts here #}	
 		{% if navi.reverse %}
-		{% set listing = collections.all | navi(navi.key) | reverse %}
+			{% set listing = collections.all | navi(navi.key) | reverse %}
 		{% else %}
-
-		{% set listing = collections.all | navi(navi.key) %}
+			{% set listing = collections.all | navi(navi.key) %}
 		{% endif %}
 		
 	<nav><ul>
@@ -51,6 +61,8 @@ layout: layouts/base.njk
 			{%- for item in listing  %}
 				
 				
+				{{ renderNavListItem(item) }}
+				
 				{%if item.excerpt %}
 					{% set excerpt = " — " + item.excerpt %}
 				{% endif %}
@@ -63,8 +75,7 @@ layout: layouts/base.njk
 				
 				<a href="{{ item.url }}" ><li class="bg{{kolor}}">		
 				<img src="{{ "/" | url }}assets/icons/ico_folder.png" />&nbsp;{{ title }}&nbsp;<span>{{ excerpt }}</span>
-				<time>{{ item.page.date | nchrsDate}}</time></li></a>
-						
+				<time>{{ lastDate | newestDate }}</time></li></a>
 			{%- endfor%}
 		{% endif %}
 		</ul></nav>
