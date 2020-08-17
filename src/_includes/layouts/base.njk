@@ -16,12 +16,16 @@
 	<style>
 		::-moz-selection { /* Code for Firefox */
 		  background: {{ highlight_col }};
-		  -moz-opacity: 0.5;
+		  {% if highlight_col != "var(--yellow)" %}
+		  color: var(--bg);
+		  {% endif %}
 		}
 
 		::selection {
 		  background: {{ highlight_col }};
-		  opacity: 0.5;
+		  {% if highlight_col != "var(--yellow)" %}
+		  color: var(--bg);
+		  {% endif %}
 		}	
 	</style>
 </head>

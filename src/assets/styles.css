@@ -3,7 +3,7 @@
 	--fg: #1A1A1A;
 	--bg_acc: #f1f1f1;
 	--fg_acc: #606060;
-	--magenta: #ff38a9;
+	--magenta: #FF1493;
 	--cyan: #389DF2;
 	--yellow: #FDD000;
 	--bg_shadow: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQImWNgYGD4z4AMAA4EAQAvGW0PAAAAAElFTkSuQmCC);
@@ -76,9 +76,9 @@ footer section img { width: 30px; }
 	
 .back-to-top {margin-top: 3px; margin-right: 1px; width: 1.4em; float: right;}
 
-.text1:hover, text1:hover > * {color: var(--yellow); font-weight:700;}
-.text2:hover, text2:hover > * {color: var(--cyan); font-weight:700;}	
-.text3:hover, text3:hover > *{color: var(--magenta); font-weight:700;}
+.text1:hover {color: var(--yellow); font-weight:700;}
+.text2:hover {color: var(--cyan); font-weight:700;}	
+.text3:hover {color: var(--magenta); font-weight:700;}
 
 .bg1:hover {background-color:var(--yellow);}
 .bg2:hover {background-color:var(--cyan);}
