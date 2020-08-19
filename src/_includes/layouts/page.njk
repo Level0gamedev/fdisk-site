@@ -4,16 +4,43 @@ layout: layouts/base.njk
 
 {% set created = page.inputPath | stat("birthtime") | nchrsDate %}
 {% set updated = page.inputPath | stat("mtime") | nchrsDate%}
+
 {% set lastDate = [] %}
-{% macro renderNavListItem(entry) -%}
+{% macro getNewestDate(entry) -%}
 {% set title = entry.key | safe | splitWords | capitalize %}
 {% set smolDate = entry.page.date | nchrsDate %}
 {% set lastDate = lastDate.push(smolDate) %}
 {% if entry.children.length %}
 {% for child in entry.children %}
-{{ renderNavListItem(child) }}
+{{ getNewestDate(child) }}
 {% endfor -%}
 {%- endif -%}
+
+{%- endmacro %}
+
+{% macro renderMenuItem(item) %}
+	
+	
+	{{ getNewestDate(item) }}
+				
+	{%if item.excerpt %}
+		{% set excerpt = " — " + item.excerpt %}
+	{% endif %}
+
+	{% set title = item.title | splitWords | capitalize %}
+
+	{%if item.icon %}
+	 {% set icon = item.icon %}
+	{% elif item.children.length %}
+	  {% set icon = "folder" %}
+	{% else %}
+	  {% set icon = "file" %}
+	{% endif %}
+	
+	<a href="{{ item.url }}" ><li class="bg{{kolor}}">
+<img src="{{ "/" | url }}assets/icons/ico_{{ icon }}.png" />&nbsp;{{ title }}&nbsp;<span>{{ excerpt }} </span>
+<time>{{ lastDate | newestDate }}</time></li></a>
+
 {%- endmacro %}
 
 <main class="shadow shadowPlus4">
@@ -24,11 +51,14 @@ layout: layouts/base.njk
 	
 	<article>
 		
-		{% if not hideTitle %}
-		  {% if altTitle %}<h1>{{ altTitle }}</h1>
-		  {% else %}<h1>{{ page.url | urlToTitle | splitWords | capitalize }}</h1>
+		
+		
+		<h1>{% if not hideTitle %}
+		  {% if altTitle %}{{ altTitle }}
+		  {% else %}The {{ page.url | urlToTitle | splitWords | capitalize }}.
 		  {% endif %}
-		{% endif %}
+		  {% if description %} <span>{{ description }}</span>{% endif %}
+		{% endif %}</h1>
 		
 		{{ content | safe }}
 
@@ -58,33 +88,25 @@ layout: layouts/base.njk
 		{% endif %}
 				
 		{% if listing.length %}
-			{%- for item in listing  %}
-				
-				
-				{{ renderNavListItem(item) }}
-				
-				{%if item.excerpt %}
-					{% set excerpt = " — " + item.excerpt %}
+			{%- for item in listing %}	
+				{% if item.children.length %}
+					{{ renderMenuItem(item) }}
 				{% endif %}
-
-				{% if item.altTitle %}
-					{% set title = item.altTitle %}
-				{% else %}
-					{% set title = item.title | splitWords | capitalize %}
+			{%- endfor%}
+			
+			{%- for item in listing %}	
+				{% if not item.children.length %}
+					{{ renderMenuItem(item) }}
 				{% endif %}
-				
-				<a href="{{ item.url }}" ><li class="bg{{kolor}}">		
-				<img src="{{ "/" | url }}assets/icons/ico_folder.png" />&nbsp;{{ title }}&nbsp;<span>{{ excerpt }}</span>
-				<time>{{ lastDate | newestDate }}</time></li></a>
 			{%- endfor%}
 		{% endif %}
 		</ul></nav>
 		{# Navigation ends here here #}
-	
+		{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
 	<hr/>
 	<div style="margin-bottom:1px; margin-top: -2px; margin-left:10px;"><span style="font-size: 12px;">
 	>> page created on {{ created }}{% if created!=updated %} &Delta; {{ updated }}{% endif %}
-	</span><a href="#"><img class = "back-to-top icon" src="{{ "/" | url }}assets/icons/arrow_up.svg" /></a></div>
+	</span><a href="#" class="back-to-top text{{kolor}}">&#9650;</a></div>
 </main>
 
 

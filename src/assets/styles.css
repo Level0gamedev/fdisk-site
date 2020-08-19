@@ -3,11 +3,11 @@
 	--fg: #1A1A1A;
 	--bg_acc: #f1f1f1;
 	--fg_acc: #606060;
-	--magenta: #FF1493;
+	--magenta: #ff38a9;
 	--cyan: #389DF2;
 	--yellow: #FDD000;
 	--bg_shadow: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQImWNgYGD4z4AMAA4EAQAvGW0PAAAAAElFTkSuQmCC);
-	--font_sans: -apple-system, BlinkMacSystemFont, "Fira Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	--font_sans:  "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 	--font_mono: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
 }
 html {scroll-behavior: smooth;}
@@ -17,13 +17,14 @@ body {
 	font-family: var(--font_sans);
 	color: var(--fg); 
 	background-color: var(--bg);
-	max-width: 776px;
+	max-width: 760px;
 	padding: 0 15px;
 	margin: 10px auto;
 	font-weight: 400;
-	line-height: 1.5;}	
-h1,h2,h3,h4 {letter-spacing: -0.02em; margin: 1rem 0;line-height: 1.3;} 
-h1 {font-size: 2em;}
+	line-height: 1.6;}	
+h1,h2,h3,h4 {letter-spacing: -0.02em; margin: 1rem 0;line-height: 1.2;} 
+h1 {font-size: clamp(1.5em, 6vw, 2.5em);}
+h1 span { font-size: 1rem; font-weight: normal; display:block; letter-spacing:0; color: var(--fg_acc); }
 h2 {font-size: 1.5em;}
 h3 {font-size: 1em;}
 
@@ -39,16 +40,16 @@ header nav li{display: inline;}
 
 small, sub, sup {font-size: 75%; }
 
-article, main nav {padding: .5em 5%; line-height: 1.5em;}	
+article, main nav {padding: 1em 8%; line-height: 1.5em;}	
 article p a[href*='/']::before { content:"{" }
 article p a[href*='/']::after { content:"}" }
 article p a[href*='//']::before { content:"[" }
 article p a[href*='//']::after { content:"]" }
 article p a:hover { background-color: var(--fg); color: var(--bg_acc);}
 
-main nav ul{list-style-type: none; margin: 0; padding: 0;  font-size: 16px; font-weight: bold; width: 100%;}
+main nav ul{list-style-type: none; margin: 0; padding: 0;  font-size: 16px; font-weight: bold; width: 100%;white-space: nowrap;}
 main nav span {font-weight: 400; font-size: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-main nav time {margin-left: auto; font-weight: 400; font-size: 80%; display: block; color:var(--fg_acc);}
+main nav time {margin-left: auto; font-weight: 400; font-size: 80%; display: block;}
 main nav img {width: 24px; height: 24px;}
 main nav li {display:flex; padding: 2px 8px;} 
 
@@ -74,7 +75,7 @@ footer section img { width: 30px; }
 .blink_me {animation: blinker 1.2s linear infinite;}
 @keyframes blinker {50% {opacity: 0;}}
 	
-.back-to-top {margin-top: 3px; margin-right: 1px; width: 1.4em; float: right;}
+.back-to-top { width: 1.2em; float: right;}
 
 .text1:hover {color: var(--yellow); font-weight:700;}
 .text2:hover {color: var(--cyan); font-weight:700;}	

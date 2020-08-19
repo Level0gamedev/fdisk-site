@@ -1,10 +1,11 @@
 ---
 layout: layouts/page.njk
 templateEngineOverride: njk,md
+hideTitle: false
 date: Last Modified
 navi:
-  key: dogs
-  parent: ƒdisk
+  key: author
+  parent: about
+  excerpt: The one responsible.
 ---
 
-Dogs would go here, if they could go on the internet.

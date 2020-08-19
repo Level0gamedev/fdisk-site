@@ -30,8 +30,6 @@
 	</style>
 </head>
 
-{% set kolor = [1, 2, 3 ] | random %}
-
 <body>
 	<header>
      <a href="/" class="shadow logo"><img src="{{ "/" | url }}assets/icons/fb_logo.svg" width="40px" class="bg{{kolor}}" /></a>
@@ -45,7 +43,8 @@
 
 		
 		{{ content | safe }}
-		
+		{% set kolor = [1, 2, 3 ] | random %}
+		{% set highlight_col = ['var(--magenta)', 'var(--cyan)', 'var(--yellow)'] | random %}
 		
 	<footer>		
 		<section>

@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("nchrsDate", function(date) {
 	  // returns the date in YYMMDD format
 		const zero = "0"
-		const yy = date.getFullYear().toString()
+		const yy = date.getFullYear().toString().slice(2,4)
 		let mm = date.getMonth() + 1
 		mm = mm < 10 ? zero.concat(mm.toString()) : mm.toString()
 		let dd = date.getDate()
@@ -51,8 +51,12 @@ module.exports = function(eleventyConfig) {
   })
   
   eleventyConfig.addFilter("newestDate", function(arr) {
-	return Math.max.apply(null,arr);
+	var last = Math.max.apply(null,arr);
+	arr.length = 0;
+	return last;
   })
+  
+  
   
    eleventyConfig.addNunjucksAsyncFilter("stat", (file, prop="birthtime", callback) => {
 	// Used for retriving creation and update dates. Originally from: https://github.com/11ty/eleventy/issues/1032	

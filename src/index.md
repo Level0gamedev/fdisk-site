@@ -1,16 +1,17 @@
 ---
 layout: layouts/page.njk
+templateEngineOverride: njk,md
 hideTitle: false
-altTitle: ƒdisk
+altTitle: "Hi!"
 date: Last Modified
 navi:
   key: ƒdisk
-  excerpt: ƒdisk is a virtual library of projects, narratives, and experiments.
 ---
 
+Welcome to ƒdisk!
 
-Nam id congue leo, non fringilla turpis. Ut  rhoncus ante mi. Morbi eget purus sed diam scelerisque convallis. Donec  dictum, quam vel malesuada viverra, tellus ante auctor ante, et  vestibulum turpis nulla non leo. Donec sit amet placerat massa. 
+I'm [Fred](/author) and this is my loosely organized [digital garden](/digitalGardens) containing a mélange of personal projects, research, ideas and other assorted notes. 
 
+The entries here aren't all organized, or even all complete. It's a space for me to document thoughts on the fly, tending to them and expanding them as needed, without worrying about how "public-ready" they are.
 
-
-
+Nevertheless – you found your way to this place. That means that you'll probably find something interesting inside. So, stay around and explore!
