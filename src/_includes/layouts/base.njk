@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="{{ "/" | url }}assets/styles.css">
 	<link rel="icon" type="image/png" href="{{ "/" | url }}assets/icons/favicon.png"/>
-	<style>
+	<style>	
 		::-moz-selection { /* Code for Firefox */
 		  background: {{ highlight_col }};
 		  {% if highlight_col != "var(--yellow)" %}
@@ -34,7 +34,7 @@
 	<header>
      <a href="/" class="shadow logo"><img src="{{ "/" | url }}assets/icons/fb_logo.svg" width="40px" class="bg{{kolor}}" /></a>
       <div class="top-bar shadow">
-		<nav class="top-menu">
+		<nav>
 			{% set path = collections.all | naviBreadcrumb(navi.key) %}
 			<ul><li>//</li>{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(kolor) | random %}<li><a class="text{{ kolor }}" href="{{ dir.url }}">{{ dir.key }}</a>/</li>{%- endfor %}<li>{{navi.key}}</li>:<span class="blink_me">_</span></ul>
 		</nav>

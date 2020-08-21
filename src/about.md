@@ -7,7 +7,7 @@ date: Last Modified
 navi:
   key: about
   parent: ƒdisk
-  excerpt: What is this all about?
+  excerpt: what is this all about?
 ---
 
-fdisk.space is a personal website and digital garden of [Fred Bednarski](/author). 
+fdisk.space is a personal website and digital garden of [Fred Bednarski](/author).  

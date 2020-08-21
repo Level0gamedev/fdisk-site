@@ -6,6 +6,7 @@ date: Last Modified
 navi:
   key: author
   parent: about
-  excerpt: The one responsible.
+  excerpt: the one responsible.
 ---
 
+ 

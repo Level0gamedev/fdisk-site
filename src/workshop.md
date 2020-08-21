@@ -8,6 +8,7 @@ date: Last Modified
 navi:
   key: workshop
   parent: ƒdisk
-  excerpt: Archive of longer projects.
+  excerpt: project repository.
 ---
 
+ 
