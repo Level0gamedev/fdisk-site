@@ -7,7 +7,11 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>&#402;disk{{ page.url }}</title>
+	<title>&#402;disk:
+	{% if altTitle %}{{ altTitle }}
+	{% else %}The {{ page.url | urlToTitle | splitWords | capitalize }}.
+	{% endif %}
+	</title>
 	<meta name="description" content="">
 	<meta name="author" content="Fred Bednarski">
 	<meta name="viewport" content="width=device-width, initial-scale=1">

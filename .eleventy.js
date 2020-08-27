@@ -1,6 +1,9 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginNav = require("@11ty/eleventy-navigation");
 const fs = require("fs");
+const markdownIt = require('markdown-it');
+const markdownItFootnote = require("markdown-it-footnote");
+const markdownItAnchor = require('markdown-it-anchor');
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
@@ -79,6 +82,19 @@ module.exports = function(eleventyConfig) {
     }
     fs.stat(file, (err, stats) => callback(err, stats && stats[prop]));
 	});
+	
+	  /* Markdown Overrides */
+  let markdownLibrary = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true
+  }).use(markdownItAnchor, {
+    permalink: true,
+    permalinkClass: "direct-link",
+    permalinkSymbol: "§"
+  })
+  .use(markdownItFootnote);
+  eleventyConfig.setLibrary("md", markdownLibrary);
 
   // custom input and output directories
   return {
