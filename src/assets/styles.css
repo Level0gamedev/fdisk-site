@@ -32,7 +32,7 @@ article,main nav{padding:1em 8%;}
 article a[href*='/']::before{content:"{"}
 article a[href*='/']::after{content:"}"}
 article a[href*='//']::before{content:"["}
-article a[href*='//']::after{content:"🡕]"}
+article a[href*='//']::after{content:"↗]"}
 article a:hover{background-color:var(--fg);color:var(--bg);}
 
 main nav{padding-top:0;}

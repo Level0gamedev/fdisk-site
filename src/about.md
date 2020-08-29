@@ -14,7 +14,7 @@ navi:
 [fdisk.space](/) is a personal website and a digital garden of [Fred Bednarski](/author). 
 
 
-It's a static website written in markup and generated with [11ty](https://www.11ty.dev/). It uses no cookies, loads no JavaScript or any type of external conent, and requires only few kilobytes of handwritten css. It strives to be accessible and low-bandwith friendly. 
+It's a static website written in markup and generated with [11ty](https://www.11ty.dev/). It doesn't use cookies, JavaScript or any other type of external conent and  requires only few kilobytes of handwritten css to run. It strives to be accessible and low-bandwith friendly. 
 
 It's one part early internet style home page, one part digital playground and like five parts wiki; it's a personal space where I document and catalog my thoughts, projects and other interesting bits for future reference and just for fun of it. It's my own, happy sliver of cyberspace, away from the mainstream.
 
