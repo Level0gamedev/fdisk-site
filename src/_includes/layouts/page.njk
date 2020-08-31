@@ -15,12 +15,10 @@ layout: layouts/base.njk
 {{ getNewestDate(child) }}
 {% endfor -%}
 {%- endif -%}
-
 {%- endmacro %}
 
+
 {% macro renderMenuItem(item) %}
-	
-	
 	{{ getNewestDate(item) }}
 				
 	{%if item.excerpt %}
@@ -38,10 +36,10 @@ layout: layouts/base.njk
 	{% endif %}
 	
 	<a href="{{ item.url }}" ><li class="bg{{kolor}}">
-<img src="{{ "/" | url }}assets/icons/ico_{{ icon }}.png" />&nbsp;{{ title }}&nbsp;<span>{{ excerpt }} </span>
+<img src="{{ "/" | url }}assets/icons/ico_{{ icon }}.png" height="24px" width="24px" />&nbsp;{{ title }}&nbsp;<span>{{ excerpt }} </span>
 <time>{{ lastDate | newestDate }}</time></li></a>
-
 {%- endmacro %}
+
 
 <main class="shadow shadowPlus4">
 	{% if navi.cover %}<section><img src="{{ navi.cover }}" /></section>{% endif %}
@@ -88,13 +86,13 @@ layout: layouts/base.njk
 		{% endif %}
 				
 		{% if listing.length %}
-			{%- for item in listing %}	
+			{%- for item in listing | reverse %}	
 				{% if item.children.length %}
 					{{ renderMenuItem(item) }}
 				{% endif %}
 			{%- endfor%}
 			
-			{%- for item in listing %}	
+			{%- for item in listing | reverse %}	
 				{% if not item.children.length %}
 					{{ renderMenuItem(item) }}
 				{% endif %}

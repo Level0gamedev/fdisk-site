@@ -3,7 +3,7 @@
 --fg:#141414;
 --bg_acc:#d4d4d4;
 --fg_acc:#606060;
---magenta:#ff38a9;
+--magenta:#EE3897;
 --cyan:#389DF2;
 --yellow:#FDD000;
 --bg_shadow:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQImWNgYGD4z4AMAA4EAQAvGW0PAAAAAElFTkSuQmCC);
@@ -37,9 +37,9 @@ article a:hover{background-color:var(--fg);color:var(--bg);}
 
 main nav{padding-top:0;}
 main nav ul{list-style-type:none;margin:0;padding:0;font-size:16px;font-weight:bold;width:100%;white-space:nowrap;}
-main nav span{font-weight:400;font-size:90%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-main nav time{margin-left:auto;font-weight:400;font-size:80%;display:block;}
-main nav img{width:24px;height:24px;}
+main nav span{font-weight:400;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+main nav time{margin-left:auto;font-weight:400;font-size:14px;display:block;}
+
 main nav li{display:flex;padding:2px 8px;} 
 
 hr{border-style:none none dotted;margin:0px;}

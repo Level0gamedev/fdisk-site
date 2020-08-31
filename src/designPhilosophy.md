@@ -11,11 +11,11 @@ navi:
   excerpt: the philosophy behind this site.
 ---
 
-ƒdisk conciously rejects the conventional trends and practices of [mainstream web](/mainstreamWeb), and instead focuses on providing an honest experience that encourages exploration. It achieves it by adhering to a set of hierarchical guidelines, where each rule supersedes the ones below it: 
+ƒdisk consciously rejects the conventional trends and practices of [mainstream web](/mainstreamWeb), and instead focuses on providing an honest experience that encourages exploration. It achieves it by adhering to a set of hierarchical guidelines, where each rule supersedes the ones below it: 
 
 
 ## modern integrity
-Form follows function. The website should use the available technology to best aid the user in experiencing its contents, regardles of hardware or ability. Each page should be straightforward, free of excesive ornamentation, distractions or any other things that take away user's agency. This includes any code that that doesn't directly aid the user and exists only to benefit its creator (or a third party). 
+Form follows function. The website should use the available technology to best aid the user in experiencing its contents, regardless of hardware or ability. Each page should be straightforward, free of excessive ornamentation, distractions or any other things that take away user's agency. This includes any code that that doesn't directly aid the user and exists only to benefit its creator (or a third party). 
 
 In short: keep it simple, accessible and ethical.
 
