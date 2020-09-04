@@ -91,6 +91,7 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: true,
     permalinkClass: "direct-link",
+	permalinkBefore: true,
     permalinkSymbol: "§"
   })
   .use(markdownItFootnote);

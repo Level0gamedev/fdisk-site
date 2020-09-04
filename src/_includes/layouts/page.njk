@@ -42,10 +42,10 @@ layout: layouts/base.njk
 
 
 <main class="shadow shadowPlus4">
-	{% if navi.cover %}<section><img src="{{ navi.cover }}" /></section>{% endif %}
 	<div style="margin-bottom:1px; margin: -3px 0 2px 10px;"><span style="font-size: 12px;">
 	~ contents of {{ page.url | urlToTitle | splitWords }}:</div>
 	<hr/>
+	{% if navi.cover %}<section><img src="{{ "/" | url }}assets/img/{{navi.cover}}.png" class="cover"/></section>{% endif %}
 	
 	<article>
 		
@@ -86,7 +86,7 @@ layout: layouts/base.njk
 		{% endif %}
 				
 		{% if listing.length %}
-			{%- for item in listing | reverse %}	
+			{%- for item in listing %}	
 				{% if item.children.length %}
 					{{ renderMenuItem(item) }}
 				{% endif %}

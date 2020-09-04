@@ -1,9 +1,9 @@
 :root{
---bg:#f8f8f8;
+--bg:#eaeaea;
 --fg:#141414;
---bg_acc:#d4d4d4;
+--bg_acc:#c4c4c4;
 --fg_acc:#606060;
---magenta:#EE3897;
+--magenta:DeepPink;
 --cyan:#389DF2;
 --yellow:#FDD000;
 --bg_shadow:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQImWNgYGD4z4AMAA4EAQAvGW0PAAAAAElFTkSuQmCC);
@@ -11,12 +11,13 @@
 --font_mono:Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
 }
 header{margin:0 auto;display:flex;}
-body{font-size:clamp(1rem, 1.2vw, 1.1rem);font-family: var(--font_sans);max-width: 820px;padding: 0 15px;margin: 8px auto;line-height: 1.5;color:var(--fg);background-color:var(--bg);}		
-h1,h2,h3 {letter-spacing: -0.02em; margin: 24px 0 -12px 0;line-height: 1.2; } 
-h1 {font-size: clamp(1.5em, 6vw, 2.5em);padding-bottom:.5em;}
+body{font-size:clamp(1rem, 1.2vw, 1.1rem);font-family: var(--font_sans);max-width: 808px;padding: 0 15px;margin: 8px auto;line-height: 1.6;color:var(--fg);background-color:var(--bg);}		
+h1,h2,h3 {letter-spacing: -0.02em;line-height: 1.2; } 
+h1 {font-size: clamp(1.5em, 6vw, 2.5em);}
 h2 {font-size: clamp(1.3em, 4vw, 1.75em);}
 h3 {font-size: clamp(1em, 3vw, 1.25em);}
 h1 span, h2 span, h3 span { font-size: 1rem; font-weight: normal; display:block; letter-spacing:0; color: var(--fg_acc); }
+.direct-link {margin-left:-.75em}
 
 a{color:var(--fg);text-decoration:none;font-style:normal;font-weight: 600;}
 
@@ -28,7 +29,7 @@ header nav ul li a{color: var(--bg);font-weight: 400;}
 header nav ul{padding: 2 0;margin-bottom:3px;padding-left:8px;font:16px var(--font_mono);} 
 header nav li{display: inline;}
 
-article,main nav{padding:1em 8%;}	
+article,main nav{padding:1em 7.37%;}	
 article a[href*='/']::before{content:"{"}
 article a[href*='/']::after{content:"}"}
 article a[href*='//']::before{content:"["}
@@ -45,6 +46,7 @@ main nav li{display:flex;padding:2px 8px;}
 hr{border-style:none none dotted;margin:0px;}
 
 pre{overflow:auto;background:var(--bg_acc);padding:10px;font-size:85%}
+blockquote{font-style:italic;}
 		
 figure{margin:0;}
 figcaption{margin-bottom:40px;}
@@ -72,3 +74,5 @@ footer section img{width: 30px;}
 
 a[href].direct-link {color: transparent;}
 a[href].direct-link:focus,:hover > a[href].direct-link,:hover > a[href].direct-link:visited {color: var(--bg_acc); background-color: transparent;}
+
+.cover{width:100%; padding:0;margin-bottom:-1em;image-rendering:crisp-edges;image-rendering: pixelated;background-color:var(--bg);}
