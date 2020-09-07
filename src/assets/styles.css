@@ -1,7 +1,7 @@
 :root{
 --bg:#eaeaea;
 --fg:#141414;
---bg_acc:#c4c4c4;
+--bg_acc:#d4d4d4;
 --fg_acc:#606060;
 --magenta:DeepPink;
 --cyan:#389DF2;
@@ -45,7 +45,8 @@ main nav li{display:flex;padding:2px 8px;}
 
 hr{border-style:none none dotted;margin:0px;}
 
-pre{overflow:auto;background:var(--bg_acc);padding:10px;font-size:85%}
+code, pre{overflow:auto;background:var(--bg_acc);padding:10px;font-size:80%}
+code{padding:2px}
 blockquote{font-style:italic;}
 		
 figure{margin:0;}
@@ -73,6 +74,6 @@ footer section img{width: 30px;}
 .bg3:hover{background-color:var(--magenta);}
 
 a[href].direct-link {color: transparent;}
-a[href].direct-link:focus,:hover > a[href].direct-link,:hover > a[href].direct-link:visited {color: var(--bg_acc); background-color: transparent;}
+a[href].direct-link:focus,:hover > a[href].direct-link,:hover > a[href].direct-link:visited {color: var(--fg_acc); background-color: transparent;}
 
-.cover{width:100%; padding:0;margin-bottom:-1em;image-rendering:crisp-edges;image-rendering: pixelated;background-color:var(--bg);}
+.cover{width:100%; padding:0;margin-bottom:-1em;background-color:var(--bg);}

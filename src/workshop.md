@@ -11,4 +11,4 @@ navi:
   excerpt: project repository.
 ---
 
-The workshop is a place where I document any current (and the no so current) projects I work on. Its part archive, part knowledge repository. However, unlike the entries inside [the laboratory](/laboratory), the things living inside the workshop have a clear end goal… or at least a stage where I am happy to call them done (or at least 'functional').
+The workshop is a place where I document any current (and the no so current) projects. Unlike the entries inside [the laboratory](/laboratory), the things living inside the workshop are more tangible. This usually means they have a clear end goal or can reach a stage where I am happy to call them done (or at least 'functional').

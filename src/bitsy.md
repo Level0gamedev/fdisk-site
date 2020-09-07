@@ -11,6 +11,7 @@ navi:
   excerpt: tiny narratives.
   icon: cartridge
   cover: houseOTliving
+  pixelize: true
 ---
 The projects here are made with [Bitsy](https://ledoux.itch.io/bitsy), a simple, browser-based engine for making small, narrative games. There's a whole [universe of bitsy games](https://itch.io/games/tag-bitsy) out there, filled with quirky narratives, personal stories and all kinds of amazing experiences. Bitsy's simplicity and tight constrains sparks creativity in many, this is how it sparked mine: 
 
@@ -22,15 +23,19 @@ I started making this game by accident. I stumbled upon the [2018 gothic game ja
 
 The idea was to make this sprawling mansion with sidequests and different paths you could choose... but I spent most of the time making graphics. This was the first time I worked with 1bit limitation, so it took me much longer to make stuff I was happy with. If it wasn't for the jam's deadline I don't think the game would be finished. I was already pushing the limits of the engine (the current version of bitsy doesn't have those issues), and knowing myself, I would probably get discouraged, and this would be yet another of my projects stuck in the depths of my hard drive's eternal limbo. I am thankful for that deadline.
 
+<i>House of the living</i> was mentioned on [itch.io blog](https://itch.io/blog/44038/rough-games-deserve-our-love-and-respect) and [wired.com](https://www.wired.com/story/you-make-fun-games-no-experience/)
 
-## The world had been sad since Tuesday<span>[A surreal bitsy tale](https://vonbednar.itch.io/the-world-was-sad-since-tuesday)</span>
+
+## The world had been sad since Tuesday <span>[A surreal bitsy tale](https://vonbednar.itch.io/the-world-was-sad-since-tuesday)</span>
 
 The title is the opening sentence of Gabriel García Márquez's story "A Very Old Man with Enormous Wings." Yep, my second bitsy game is also inspired by literature. It was made in a week as a final project for an English class when I was finishing college. I really didn't want to write another boring final paper that will only be seen by me and the professor. At least this little interactive experience can be enjoyed by others.
 
 Being made relatively soon after my first bitsy game, it follows a lot of the same "beats." It is also a mood piece with twists, unanswered questions and a surprise "money shot" screen. However, this time, instead of dread, it tries to capture the initial confusion and sense of discovery magical realism provides. In this game I experimented a bit more with bitsy, playing with randomizers and variable dialogues based on collectibles. Of course, just like the previous game, I spent way too much time on pixel art :P
+
+<i>The world had been sad since Tuesday</i> was featured on [RockPaperShotgun](https://www.rockpapershotgun.com/2020/05/09/priceless-play-9-may-2020/)
  
 
-## Bitsy HD<span>[A hacked Bitsy editor](https://vonbednar.itch.io/bitsy-x2)</span>
+## Bitsy HD<span> [A hacked Bitsy editor](https://vonbednar.itch.io/bitsy-x2)</span>
 
 I don't really remember if I wanted to make a Bitsy game with more detailed sprites, or just thought it would be cool to have more resolution. All I remember was sitting on the [Bitsy Talk Discord](https://t.co/sUnR5cxXvF?amp=1) and deciding to give hacking bitsy a try.
 

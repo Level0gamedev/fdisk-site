@@ -3,13 +3,13 @@
   "permalink": "rss.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "nchrs.xyz",
-    "subtitle": "Journal entries on project updates, thoughts and musings.",
-    "url": "https://nchrs.xyz",
-    "feedUrl": "https://nchrs.xyz/rss.xml",
+    "title": "ƒdisk.space",
+    "subtitle": "Loosely organized digital garden",
+    "url": "https://fdisk.space",
+    "feedUrl": "https://fdisk.space/rss.xml",
     "author": {
-      "name": "Clemens Scott",
-      "email": "clemens@brokenrul.es"
+      "name": "Fred Bednarski",
+      "email": "fred.bednarski@gmail.com"
     }
   }
 }
@@ -26,10 +26,13 @@
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for entry in collections.journal %}
+  {%- for entry in collections.all %}
   {% set absolutePostUrl %}{{ entry.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
-    <title>{{ entry.data.eleventyNavigation.key }}</title>
+    <title>{% if entry.data.altTitle %}{{ altTitle }}
+		  {% else %}The {{ entry.data.page.url | urlToTitle | splitWords | capitalize }}.
+		  {% endif %}</title>
+    <subtitle>{{ entry.data.description }}</subtitle>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ entry.date | rssDate }}</updated>
     <id>{{ absolutePostUrl }}</id>
