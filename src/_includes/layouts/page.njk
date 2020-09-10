@@ -43,7 +43,7 @@ layout: layouts/base.njk
 
 <main class="shadow shadowPlus4">
 	<div style="margin-bottom:1px; margin: -3px 0 2px 10px;"><span style="font-size: 12px;">
-	~ contents of {{ page.url | urlToTitle | splitWords }}:</div>
+	~ contents of {{ navi.key }}:</div>
 	<hr/>
 	{% if navi.cover %}<section><img src="{{ "/" | url }}assets/img/{{navi.cover}}.png" class="cover" {% if navi.pixelize %} style="image-rendering:crisp-edges;image-rendering: pixelated;"{% endif %} /></section>{% endif %}
 	

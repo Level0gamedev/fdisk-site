@@ -10,6 +10,6 @@ navi:
   excerpt: interactive fun.
 ---
 
-I love game design. The idea that mechanical systems can not only facilitate fun, but also be used to reinforce the themes and narratives inside the *magic circle* really resonates with me. Making a game work on both those levels is a puzzle that I really enjoy solving. It's another thing entirely to actually implement that solution. 
+I love game design. The idea that dry, mechanical systems can not only facilitate fun, but can also be constructed in a way to reinforce the themes and narratives of that fun really resonates with me. It's a puzzle I really enjoy solving. It's another thing entirely, of course, to actually implement such solution. 
 
-This is probably the reason why I am so bad at finishing games ;)
+This is my artsy-fartsy excuse for why I am so bad at finishing games ;)
