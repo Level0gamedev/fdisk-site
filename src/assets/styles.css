@@ -29,12 +29,14 @@ header nav ul li a{color: var(--bg);font-weight: 400;}
 header nav ul{padding: 2 0;margin-bottom:3px;padding-left:8px;font:16px var(--font_mono);} 
 header nav li{display: inline;}
 
+
 article,main nav{padding:1em 7.37%;}	
 article a[href*='/']::before{content:"{"}
 article a[href*='/']::after{content:"}"}
 article a[href*='//']::before{content:"["}
 article a[href*='//']::after{content:"↗]"}
 article a:hover{background-color:var(--fg);color:var(--bg);}
+
 
 main nav{padding-top:0;}
 main nav ul{list-style-type:none;margin:0;padding:0;font-size:16px;font-weight:bold;width:100%;white-space:nowrap;}

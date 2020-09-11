@@ -10,7 +10,7 @@ navi:
 
 Welcome to ƒdisk!
 
-I'm [Fred](/author) and this is my loosely organized [digital garden](/design/#digital-garden) <span style="color:var(--fg_acc);">eventually</span> containing a mélange of personal projects, research, musings and other assorted notes. 
+I'm [Fred](/author) and this is my loosely organized [digital garden](/designphilosophy/#digital-garden) <span style="color:var(--fg_acc);">eventually</span> containing a mélange of personal projects, research, musings and other assorted notes. 
 
 This website isn't about any one thing in particular. It's an open thinking platform, a space where I store, share and work on ideas. The entries here aren't all organized, or even all complete; it's a living archive which will grow and change over time.
 
