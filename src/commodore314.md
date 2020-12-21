@@ -3,12 +3,16 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 altTitle: "The Commodore 314."
-date: Last Modified
+date: 2020-08-26
 description: "a raspberry pi inside a dead C64 breadbin."
 navi:
-  key: commodore314
-  parent: workshop
+  key: "commodore314"
+  parent: digital
   excerpt: "C64 emulation station"
+tags:
+  - retro 
+  - hardware
+  - project
 ---
 
 Commodore 314 is a custom 80s & 90s emulation machine. It's a Raspberry Pi 3B+ with a bunch of adapters and some custom designed 3d printed parts inside an original Commodore 64 case. It runs RetroPie and BMC64, can output to both composite and HDMI and uses the built-in C64 keyboard, USB peripherals and Atari compatible joysticks as input. No vintage hardware was harmed during making of this project.

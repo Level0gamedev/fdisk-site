@@ -3,7 +3,9 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 altTitle: "Hi!"
-date: Last Modified
+date: 2020-09-11
+tags: 
+  - all
 navi:
   key: ƒdisk
 ---

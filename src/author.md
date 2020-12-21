@@ -2,7 +2,9 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-date: Last Modified
+date: 2020-08-21
+tags: 
+  - all
 navi:
   key: author
   parent: about

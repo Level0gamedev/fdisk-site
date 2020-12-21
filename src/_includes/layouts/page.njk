@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 
 {% set created = page.inputPath | stat("birthtime") | nchrsDate %}
-{% set updated = page.inputPath | stat("mtime") | nchrsDate%}
+{% set updated = page.date | nchrsDate%}
 
 {% set lastDate = [] %}
 {% macro getNewestDate(entry) -%}
@@ -24,8 +24,12 @@ layout: layouts/base.njk
 	{%if item.excerpt %}
 		{% set excerpt = " — " + item.excerpt %}
 	{% endif %}
-
+	
+	{%if item.keepTogether %}
+	{% set title = item.title | capitalize %}
+	{%- else -%}
 	{% set title = item.title | splitWords | capitalize %}
+	{%- endif -%}
 
 	{%if item.icon %}
 	 {% set icon = item.icon %}
@@ -43,7 +47,7 @@ layout: layouts/base.njk
 
 <main class="shadow shadowPlus4">
 	<div style="margin-bottom:1px; margin: -3px 0 2px 10px;"><span style="font-size: 12px;">
-	~ contents of {{ navi.key }}:</div>
+	~ contents of {{ navi.key }}: {% for tag in tags %} {% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %} {% if tag != "all" %} <span class="bg{{kolor}}"><a href="/category/{{tag}}">[{{tag}}]</a></span> {% endif %} {% endfor %}</div>
 	<hr/>
 	{% if navi.cover %}<section><img src="{{ "/" | url }}assets/img/{{navi.cover}}.png" class="cover" {% if navi.pixelize %} style="image-rendering:crisp-edges;image-rendering: pixelated;"{% endif %} /></section>{% endif %}
 	
@@ -58,19 +62,24 @@ layout: layouts/base.njk
 		  {% if description %} <span>{{ description }}</span>{% endif %}
 		{% endif %}</h1>
 		
+		{% if includeToc %}
+		<h3>> Table of Contents:<span class="blink_me">_</span></h3>
+		{{ content | toc | safe }}
+		{% endif %}
+		
 		{{ content | safe }}
 
 	</article>
 	
 	
-	
+	{% if not tagPage %}
 	{# Navigation starts here #}	
 		
 	{% set listing = collections.all | navi(navi.key) | reverse %}
 
 
 		
-	<nav><ul>
+	<nav id="nav"><ul>
 		<hr/>
 		{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
 		
@@ -81,24 +90,24 @@ layout: layouts/base.njk
 		{% endif %}
 				
 		{% if navi.key != "ƒdisk" %}
-			<a href="/{{ link }}" ><li class="bg{{kolor}}"><img src="{{ "/" | url }}assets/icons/ico_back.png" />&nbsp;.. /</li></a>	
+			<a href="/{{ link }}#nav" ><li class="bg{{kolor}}"><img src="{{ "/" | url }}assets/icons/ico_back.png" />&nbsp;.. /</li></a>	
 		{% endif %}
 				
 		{% if listing.length %}
 			{%- for item in listing %}	
-				{% if item.children.length %}
+				{% if item.children.length and not item.icon %}
 					{{ renderMenuItem(item) }}
 				{% endif %}
 			{%- endfor%}
 			
 			{%- for item in listing %}	
-				{% if not item.children.length %}
+				{% if not item.children.length or item.icon %}
 					{{ renderMenuItem(item) }}
 				{% endif %}
 			{%- endfor%}
 		{% endif %}
 		</ul></nav>
-		{# Navigation ends here here #}
+		{# Navigation ends here here #}{% endif %}
 		{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
 	<hr/>
 	<div style="margin-bottom:1px; margin-top: -2px; margin-left:10px;"><span style="font-size: 12px;">

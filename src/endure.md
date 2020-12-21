@@ -2,12 +2,15 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-date: Last Modified
+date: 2020-09-11
 altTitle: Endure.
 description: "exploring struggle in tabletop RPG"
+tags: 
+  - roleplaying
+  - project
 navi:
   key: endure
-  parent: games
+  parent: tabletop
   excerpt: a survival RPG.
   icon: book
 ---

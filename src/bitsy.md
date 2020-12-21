@@ -2,12 +2,17 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-date: Last Modified
+date: 2020-09-06
 altTitle: Itsy Bitsy Narratives
 description: "tiny worlds, big ideas"
+tags: 
+  - retro
+  - "pixel art"
+  - "video game"
+  - project
 navi:
   key: bitsy
-  parent: games
+  parent: digital
   excerpt: tiny narratives.
   icon: cartridge
   cover: houseOTliving

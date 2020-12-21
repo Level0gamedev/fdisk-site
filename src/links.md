@@ -5,6 +5,8 @@ hideTitle: false
 altTitle: Cool Links
 description: "does what it says on the tin."
 date: Last Modified
+tags: 
+  - all
 navi:
   key: coolLinks
   parent: ƒdisk
@@ -13,6 +15,9 @@ navi:
 
 This is my collection of all kinds of interesting sites I stumbled upon online. I am adding them in reverse chronological order, so the lower the link on this page, the greater the chances of the website no longer being online. I always try to make sure the page is archived, so check [wayback machine](https://archive.org/web/) in those cases.
 
+[StumblingOn](https://stumblingon.com/) - get a random private site from a curated list with every click!
+
+[analogjoy.club](http://analogjoy.club) archives and translates vintage Japanese board games.
 
 lvllvl.com is a really robust petscii drawing web tool. It lets you draw your own art cell by cell or convert any image to petscii both with and without c64 restrictions.
 

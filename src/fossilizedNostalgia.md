@@ -2,9 +2,13 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-date: Last Modified
+date: 2020-09-07
 altTitle: Fossilized Nostalgia.
 description: "2018, painted gypsum"
+tags: 
+  - retro
+  - art
+  - project
 navi:
   key: fossilizedNostalgia
   parent: creative

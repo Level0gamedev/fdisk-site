@@ -4,11 +4,15 @@ const fs = require("fs");
 const markdownIt = require('markdown-it');
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItAnchor = require('markdown-it-anchor');
+const pluginTOC = require('eleventy-plugin-toc')
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginRss);
 	eleventyConfig.addPlugin(pluginNav);
 	eleventyConfig.addPassthroughCopy("src/assets");
+	 eleventyConfig.addPlugin(pluginTOC, {
+		tags: ['h2', 'h3'],
+		wrapper: 'div', ul: true});
 
   // custom functions for nchrs.xyz
 	eleventyConfig.addFilter("nchrsDate", function(date) {
@@ -39,6 +43,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("capitalize", function(str) {
     // capitalizes the first letter of a string
     // e.g. old Mans Journey returns Old Man's Journey
+	str = str.replace(/_/g, ' ');
     return str.charAt(0).toUpperCase() + str.slice(1)
   })
   
@@ -58,7 +63,6 @@ module.exports = function(eleventyConfig) {
 	arr.length = 0;
 	return last;
   })
-  
   
   
    eleventyConfig.addNunjucksAsyncFilter("stat", (file, prop="birthtime", callback) => {
@@ -103,5 +107,6 @@ module.exports = function(eleventyConfig) {
       input: 'src',
       output: 'dist'
     }
-  };
+	};
+
 }

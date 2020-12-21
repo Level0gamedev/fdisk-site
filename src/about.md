@@ -4,12 +4,14 @@ templateEngineOverride: njk,md
 hideTitle: false
 altTitle: What the ƒdisk?
 description: "a few words about this site."
-date: Last Modified
+date: 2020-09-04
 order: 1
+tags: 
+  - all
 navi:
   key: about
   parent: ƒdisk
-  excerpt: what is this all about?
+  excerpt: "what's all this about?"
 ---
 
 [fdisk.space](/thisSite) is a personal website and a digital garden of [Fred Bednarski](/author). It strives to be [accessible and low-bandwidth friendly](/designPhilosophy). 

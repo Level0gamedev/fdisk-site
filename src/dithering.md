@@ -3,7 +3,10 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 description: "an in-depth look at faking color depth."
-date: Last Modified
+date: 2020-08-31
+tags: 
+  - art
+  - "info dump"
 navi:
   key: dithering
   parent: grimoire

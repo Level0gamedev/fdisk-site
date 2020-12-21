@@ -2,11 +2,14 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-date: Last Modified
+date: 2020-08-30
 altTitle: "The Design Philosophy." 
 description: "a modern, lo-fi digital garden manifesto."
+tags: 
+  - "web tech"
+  - "info dump"
 navi:
-  key: design
+  key: philosophy
   parent: about
   excerpt: the philosophy behind this site.
 ---

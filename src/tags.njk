@@ -1,0 +1,48 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+hideTitle: true
+layout: layouts/page.njk
+tagPage: true
+permalink: /category/{{ tag }}/
+navi:
+  key: navigation
+---
+
+{%if tag != "project" %}
+<h1>{{tag | capitalize}} stuff!<span>Every ƒdisk doc about about the topic.</span></h1>
+{% else %}
+<h1>Complete Projects!<span>Things that are pretty much "done!"</span></h1>
+{% endif %}
+</article>
+
+
+{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
+
+<nav><ul>
+	<hr/>
+
+
+	
+{% set taglist = collections[ tag ] %}
+{% for item in taglist | reverse %}
+	
+
+	{%if item.data.navi.excerpt %}
+		{% set excerpt = " — " + item.data.navi.excerpt %}
+	{% endif %}
+	
+	{%if item.data.navi.icon %}
+		{% set ikona = item.data.navi.icon %}
+	{% else %}
+		{% set ikona = "file" %}
+	{% endif %}
+	
+	<a href="{{ item.url | url }}" ><li class="bg{{kolor}}">
+<img src="{{ "/" | url }}assets/icons/ico_{{ikona}}.png" height="24px" width="24px" />&nbsp;{%if not item.data.navi.keepTogether %}{{ item.url | urlToTitle | splitWords | capitalize }} {%- else -%} {{ item.data.navi.key | capitalize }} {%- endif -%}&nbsp;<span>{{ excerpt }}</span><time>{{ item.date | nchrsDate }}</time></li></a>
+
+
+{% endfor %}
+</ul></nav>
