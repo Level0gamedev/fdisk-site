@@ -41,7 +41,7 @@
       <div class="top-bar shadow">
 		<nav>
 			{% set path = collections.all | naviBreadcrumb(navi.key) %}
-			<ul><li>//</li>{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(kolor) | random %}<li><a class="text{{ kolor }}" href="{{ dir.url }}">{{ dir.key }}</a>/</li>{%- endfor %}<li>{{navi.key}}</li>:<span class="blink_me">_</span></ul>
+			//{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(kolor) | random %}<a class="text{{ kolor }}" href="{{ dir.url }}">{{ dir.key }}</a>/{%- endfor %}{{navi.key}}:<span class="blink_me">_</span>
 		</nav>
       </div>
     </header>

@@ -1,7 +1,7 @@
 :root{
 --bg:#f1f1f1;
 --fg:#141414;
---bg_acc:#d4d4d4;
+--bg_acc:#e0e0e0;
 --magenta:DeepPink;
 --cyan:#389DF2;
 --yellow:#FDD000;
@@ -13,7 +13,7 @@ header{margin:0 auto;display:flex;}
 body{font-family: var(--font_sans);max-width: 808px;padding: 0 15px;margin: 8px auto;line-height: 1.6;color:var(--fg);background-color:var(--bg);}		
 h1,h2,h3 {letter-spacing: -0.02em;line-height: 1.2; margin-bottom:0;} 
 h1 {font-size: clamp(1.5em, 7vw, 3em);}
-h1 span { font-size: 1rem; font-weight: normal; display:block; letter-spacing:0; color: var(--fg_acc);  }
+h1 span{ font-size: 1rem; font-weight: normal; display:block; letter-spacing:0;}
 .direct-link {margin-left:-.75em}
 
 a{color:var(--fg);text-decoration:none;font-style:normal;font-weight: 600;}
@@ -24,8 +24,8 @@ main{border:2px solid var(--fg);margin:16px auto;background-color:var(--bg);}
 main img{padding: 0}
 
 header div {max-height:40px; display:flex; flex:1;  align-items:flex-end; background:var(--fg); color:var(--bg);}
-header nav ul li a{color: var(--bg);font-weight: 400;}
-header nav ul{padding: 2 0;margin-bottom:3px;padding-left:8px;font:16px var(--font_mono);} 
+header nav a{color: var(--bg);font-weight: 400;}
+header nav {padding: 2 0;margin-bottom:3px;padding-left:8px;font:16px var(--font_mono);} 
 header nav li{display: inline;}
 
 article,main nav{padding:1em 7.37%;}	
@@ -79,3 +79,9 @@ a[href].direct-link:focus,:hover > a[href].direct-link,:hover > a[href].direct-l
 .cover{width:100%; padding:0;margin-bottom:-1em;background-color:var(--bg);}
 
 .toc ul{list-style-type:none;font-size:16px;margin:8px -16px;font-weight:normal;width:100%;}
+
+details{background-color:var(--bg_acc);padding: 12px;}
+
+@media (min-width: 600px) {
+article p {text-align: justify; text-justify: inter-word;}
+}
