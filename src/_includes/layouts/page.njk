@@ -44,10 +44,11 @@ layout: layouts/base.njk
 <time>{{ lastDate | newestDate }}</time></li></a>
 {%- endmacro %}
 
+{% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %}
 
 <main class="shadow shadowPlus4">
 	<div style="margin-bottom:1px; margin: -3px 0 2px 10px;"><span style="font-size: 12px;">
-	~ contents of {{ navi.key }}: {% for tag in tags %} {% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %} {% if tag != "all" %} <span class="bg{{kolor}}"><a href="/category/{{tag}}">[{{tag}}]</a></span> {% endif %} {% endfor %}</div>
+	~ contents of {{ navi.key }}: {% for tag in tags %} {% set kolor =  [1, 2, 3 ] | removeVal(kolor) | random %} {% if tag != "all" %} <span class="bg{{kolor}}"><a href="/category/{{tag}}">[{{tag}}]</a></span> {% endif %} {% endfor %}<a href="#nav" class="nav-arrow text{{kolor}}">&#9660;</a></div>
 	<hr/>
 	{% if navi.cover %}<section><img src="{{ "/" | url }}assets/img/{{navi.cover}}.png" class="cover" {% if navi.pixelize %} style="image-rendering:crisp-edges;image-rendering: pixelated;"{% endif %} /></section>{% endif %}
 	
