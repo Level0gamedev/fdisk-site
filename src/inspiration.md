@@ -4,6 +4,7 @@ templateEngineOverride: njk,md
 hideTitle: false
 date: 2020-10-21
 description: "a repository of inspirational creative stuff."
+order: -1
 tags: 
   - research
 navi:

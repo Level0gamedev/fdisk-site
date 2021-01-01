@@ -14,6 +14,11 @@ module.exports = function(eleventyConfig) {
 		tags: ['h2', 'h3'],
 		wrapper: 'div', ul: true});
 
+    eleventyConfig.addFilter("order", function(vals) {
+	  return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
+    });
+  
+  
   // custom functions for nchrs.xyz
 	eleventyConfig.addFilter("nchrsDate", function(date) {
 	  // returns the date in YYMMDD format
@@ -32,20 +37,20 @@ module.exports = function(eleventyConfig) {
     let folders = path.split("/")
     folders = folders.slice(1,folders.length - 1)
     return folders.length > 0 ? folders[folders.length - 1] : "ƒdisk"    
-  })
+  });
 
   eleventyConfig.addFilter("splitWords", function(str) {
     // finds uppercase letters in camel case strings and inserts a whitespace character
     // e.g. oldMansJourney returns old Mans Journey
     return str.replace(/([A-Z])/g,' $1')  
-  })
+  });
 
   eleventyConfig.addFilter("capitalize", function(str) {
     // capitalizes the first letter of a string
     // e.g. old Mans Journey returns Old Man's Journey
 	str = str.replace(/_/g, ' ');
     return str.charAt(0).toUpperCase() + str.slice(1)
-  })
+  });
   
    eleventyConfig.addFilter("removeVal", function(arr,val) {
     // removes the specified value from an array
@@ -56,15 +61,28 @@ module.exports = function(eleventyConfig) {
 		}
 	}
     return arr
-  })
+  });
   
   eleventyConfig.addFilter("newestDate", function(arr) {
 	var last = Math.max.apply(null,arr);
 	arr.length = 0;
 	return last;
-  })
+  });
   
+  eleventyConfig.addFilter("min", (...numbers) => {
+    return Math.min.apply(null, numbers);
+  });
   
+   // Get the first `n` elements of a collection.
+  eleventyConfig.addFilter("head", (array, n) => {
+    if( n < 0 ) {
+      return array.slice(n);
+    }
+
+    return array.slice(0, n);
+  });
+  
+
    eleventyConfig.addNunjucksAsyncFilter("stat", (file, prop="birthtime", callback) => {
 	// Used for retriving creation and update dates. Originally from: https://github.com/11ty/eleventy/issues/1032	
 	
@@ -95,8 +113,8 @@ module.exports = function(eleventyConfig) {
   }).use(markdownItAnchor, {
     permalink: true,
     permalinkClass: "direct-link",
-	permalinkBefore: true,
-    permalinkSymbol: "§"
+	permalinkBefore: false,
+    permalinkSymbol: "#"
   })
   .use(markdownItFootnote);
   eleventyConfig.setLibrary("md", markdownLibrary);

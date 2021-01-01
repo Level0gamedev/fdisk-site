@@ -2,8 +2,9 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-date: 2020-10-30
-altTitle: This Website.
+date: last modified
+altTitle: 2020-12-18
+order: -1
 tags: 
   - all
 description: "documenting how and why ƒdisk is made."
@@ -26,16 +27,16 @@ Most importantly, I wanted to avoid a "feed" for this website. There is plenty o
 <details>
 <summary>Still plenty to do to make it just the way I want it.</summary>
 
-* down arrow - add an arrow icon in top right to scroll to the bottom to make navigation easier.
 * dark mode - investigate non-js way to enable dark mode. Will need to add extra css to turn black svgs and pngs into white if needed. Moon icon in top right?
-* fix rss - the rss currently has some formatting issues. Needs 11ty troubleshooting.
-* fix breadcrumb format - change breadcrumb up top from a list into a string of links, to make it work better with css disabled/text only/gemini
 * backlinks - investigate backlinks as a way to add connectivity between sites.
 * footnotes - test and format (css) footnotes from the 11ty plugin. Consider how they will look with bottom navigation AND the possible backlinks?
-* tags - use 11ty tags as categories? Place them after "contents of X" up top. Should encourage more exploration. Possibly wait until the site is decently populated, otherwise they are pointless.
 * seedling icon? - consider adding a seedling icon to let the viewer know what to expect before clicking on a nav link. 
 * multi category entries? - can be faked with adding permalink "pages" to 11ty navigation that points to an existing page elsewhere. Should have a shortcut/alias icon?
 * fix printing of the website to actually work. I think it has something to do with the drop-shadow I use.
+* **done** down arrow - add an arrow icon in top right to scroll to the bottom to make navigation easier.
+* **done** fix breadcrumb format - change breadcrumb up top from a list into a string of links, to make it work better with css disabled/text only/gemini
+* **done** tags - use 11ty tags as categories? Place them after "contents of X" up top. Should encourage more exploration. Possibly wait until the site is decently populated, otherwise they are pointless.
+
 
 </details>
 

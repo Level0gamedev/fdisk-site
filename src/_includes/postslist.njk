@@ -1,0 +1,7 @@
+<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+{% for post in postslist | reverse %}
+  <li class="postlist-item">
+    <a href="{{ post.url | url }}" class="postlist-link">{%if not post.data.navi.keepTogether %}{{ post.url | urlToTitle | splitWords | capitalize }} {%- else -%} {{ post.data.navi.key | capitalize }} {%- endif -%}&nbsp;<span>{{ excerpt }}</span><time>{{ post.date | nchrsDate }}</time></a>   
+  </li>
+{% endfor %}
+</ol>

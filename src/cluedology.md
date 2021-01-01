@@ -4,6 +4,7 @@ templateEngineOverride: njk,md
 hideTitle: false
 description: "♟ tabletop deduction beyond Clue(do)."
 date: 2020-11-29
+order: -1
 altTitle: "The Cluedology." 
 tags: 
   - board game

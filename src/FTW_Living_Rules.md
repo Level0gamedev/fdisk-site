@@ -4,7 +4,8 @@ templateEngineOverride: njk,md
 hideTitle: false
 includeToc: true
 description: playing war with wood. 
-date: Last Modified
+date: 2020-12-30
+order: -1
 altTitle: "FTW! Living Rules" 
 tags:
   - wargame

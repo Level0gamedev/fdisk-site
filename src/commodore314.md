@@ -4,6 +4,7 @@ templateEngineOverride: njk,md
 hideTitle: false
 altTitle: "The Commodore 314."
 date: 2020-08-26
+order: -1
 description: "a raspberry pi inside a dead C64 breadbin."
 navi:
   key: "commodore314"

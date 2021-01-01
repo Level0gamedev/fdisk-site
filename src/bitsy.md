@@ -3,6 +3,7 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 date: 2020-09-06
+order: -1
 altTitle: Itsy Bitsy Narratives
 description: "tiny worlds, big ideas"
 tags: 

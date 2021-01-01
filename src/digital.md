@@ -2,9 +2,9 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-order: 2
 description: "a collection of potentially interesting tech stuffs."
 date: 2020-10-11
+order: 80
 tags: 
   - all
 navi:

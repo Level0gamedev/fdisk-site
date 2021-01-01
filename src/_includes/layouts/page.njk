@@ -76,7 +76,7 @@ layout: layouts/base.njk
 	{% if not tagPage %}
 	{# Navigation starts here #}	
 		
-	{% set listing = collections.all | navi(navi.key) | reverse %}
+	{% set listing = collections.all | order | navi(navi.key) | reverse %}
 
 
 		

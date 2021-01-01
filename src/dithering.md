@@ -4,6 +4,7 @@ templateEngineOverride: njk,md
 hideTitle: false
 description: "an in-depth look at faking color depth."
 date: 2020-08-31
+order: -1
 tags: 
   - art
   - "info dump"

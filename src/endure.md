@@ -4,6 +4,7 @@ templateEngineOverride: njk,md
 hideTitle: false
 date: 2020-09-11
 altTitle: Endure.
+order: -1
 description: "exploring struggle in tabletop RPG"
 tags: 
   - roleplaying

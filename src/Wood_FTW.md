@@ -3,7 +3,8 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 description: the why and how of wooden forces. 
-date: Last Modified
+date: 2020-12-18
+order: -1
 altTitle: "Wooden Blocks FTW!" 
 tags:
   - wargame

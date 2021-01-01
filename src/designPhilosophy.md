@@ -5,6 +5,7 @@ hideTitle: false
 date: 2020-08-30
 altTitle: "The Design Philosophy." 
 description: "a modern, lo-fi digital garden manifesto."
+order: -1
 tags: 
   - "web tech"
   - "info dump"

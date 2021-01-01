@@ -5,6 +5,7 @@ hideTitle: false
 description: "a collection of cool, but forgotten(?) tabletop mechanics."
 date: 2020-12-14
 altTitle: The Cool Ol' Ideas.
+order: -1
 tags: 
   - "board game"
   - research

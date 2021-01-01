@@ -14,7 +14,6 @@ body{font-family: var(--font_sans);max-width: 808px;padding: 0 15px;margin: 8px 
 h1,h2,h3 {letter-spacing: -0.02em;line-height: 1.2; margin-bottom:0;} 
 h1 {font-size: clamp(1.5em, 7vw, 3em);}
 h1 span{ font-size: 1rem; font-weight: normal; display:block; letter-spacing:0;}
-.direct-link {margin-left:-.75em}
 
 a{color:var(--fg);text-decoration:none;font-style:normal;font-weight: 600;}
 
@@ -77,7 +76,7 @@ a[href].direct-link:focus,:hover > a[href].direct-link,:hover > a[href].direct-l
 
 .cover{width:100%; padding:0;margin-bottom:-1em;background-color:var(--bg);}
 
-.toc ul{list-style-type:none;font-size:16px;margin:8px -16px;font-weight:normal;width:100%;}
+ul{margin:4px 0px;}
 .nav-arrow{ width: 20px; font-size:16px; float: right;}
 
 details{background-color:var(--bg_acc);padding: 12px;}

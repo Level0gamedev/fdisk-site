@@ -3,6 +3,7 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 date: 2020-09-07
+order: -1
 altTitle: Fossilized Nostalgia.
 description: "2018, painted gypsum"
 tags: 

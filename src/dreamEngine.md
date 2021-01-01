@@ -3,6 +3,7 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 date: 2020-10-21
+order: -1
 description: "I want to make tiny games."
 tags: 
   - "video game"

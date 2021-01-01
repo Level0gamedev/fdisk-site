@@ -5,6 +5,7 @@ hideTitle: false
 date: 2020-09-03
 altTitle: Heavy Wizardry.
 description: "anti-design, anti-capitalist art zine / tabletop RPG"
+order: -1
 tags: 
   - cyberpunk
   - roleplaying  

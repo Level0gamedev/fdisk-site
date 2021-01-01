@@ -3,7 +3,8 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 description: the why and how of playing on a map. 
-date: Last Modified
+date: 2020-12-21
+order: -1
 altTitle: "Battlefield Maps FTW!" 
 tags:
   - wargame

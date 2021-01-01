@@ -3,7 +3,8 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 description: a deceptively simple Kriegspiel-pop ruleset! 
-date: Last Modified
+date: 2020-12-18
+order: -1
 altTitle: "Frivolous Tabletop Warfare!" 
 tags:
   - wargame

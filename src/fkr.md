@@ -5,6 +5,7 @@ hideTitle: false
 altTitle: Free Kreigsspiel Revolution.
 description: "play worlds, not rules."
 date: 2020-10-05
+order: -1
 tags: 
   - roleplaying
   - "info dump"
