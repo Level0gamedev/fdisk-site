@@ -74,7 +74,7 @@ footer section img{width: 30px;}
 a[href].direct-link {color: transparent;}
 a[href].direct-link:focus,:hover > a[href].direct-link,:hover > a[href].direct-link:visited {color: var(--fg); background-color: transparent;}
 
-.cover{width:100%; padding:0;margin-bottom:-1em;background-color:var(--bg);}
+.cover{width:100%; padding:0;margin-bottom:-3em;background-color:var(--bg);}
 
 ul{margin:4px 0px;}
 .nav-arrow{ width: 20px; font-size:16px; float: right;}

@@ -14,9 +14,10 @@ module.exports = function(eleventyConfig) {
 		tags: ['h2', 'h3'],
 		wrapper: 'div', ul: true});
 
-    eleventyConfig.addFilter("order", function(vals) {
-	  return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
-    });
+  eleventyConfig.addFilter("sortByOrder", function(values) {
+	let vals = [...values];     // this *seems* to prevent collection mutation...
+     return vals.slice().sort((a, b) => a.data.order -b.data.order)
+  });
   
   
   // custom functions for nchrs.xyz

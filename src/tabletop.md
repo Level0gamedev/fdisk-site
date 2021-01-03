@@ -4,7 +4,7 @@ templateEngineOverride: njk,md
 hideTitle: false
 description: "tabletop gaming projects & assorted shenanigans."
 date: 2020-11-27
-order: 90
+order: 9
 tags: 
   - all
 navi:

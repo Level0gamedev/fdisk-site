@@ -1,8 +1,9 @@
 ---
 layout: layouts/page.njk
 templateEngineOverride: njk,md
-hideTitle: false
-date: last modified
+hideTitle: true
+date: 2021-01-01
+order: -1
 description: "a chronicle of annual themes and noteworthy things."
 tags: 
   - life
@@ -10,7 +11,9 @@ navi:
   key: annual
   parent: personal
   excerpt: "yearly themes and noteworthy things"
+  cover: annual2021
 ---
+<h1 style="margin-top:-1em;">The Annual.<span>a chronicle of annual themes and noteworthy things.</span></h1>
 
 Inspired by fellow [merveillites](https://chotrin.tilde.institute/the_annual.html) and [CGP Grey](https://www.youtube.com/watch?v=NVGuFdX5guE), I am integrating annual themes into my life starting 2021. This page keeps track of my theme progress and other accomplishments per year.
 

@@ -4,7 +4,7 @@ templateEngineOverride: njk,md
 hideTitle: false
 description: "a collection of potentially interesting tech stuffs."
 date: 2020-10-11
-order: 80
+order: 8
 tags: 
   - all
 navi:

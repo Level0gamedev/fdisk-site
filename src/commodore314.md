@@ -3,13 +3,14 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 altTitle: "The Commodore 314."
-date: 2020-08-26
+date: last modified
 order: -1
 description: "a raspberry pi inside a dead C64 breadbin."
 navi:
   key: "commodore314"
   parent: digital
   excerpt: "C64 emulation station"
+  cover: c314
 tags:
   - retro 
   - hardware
