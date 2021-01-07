@@ -12,7 +12,7 @@
 header{margin:0 auto;display:flex;}
 body{font-family: var(--font_sans);max-width: 808px;padding: 0 15px;margin: 8px auto;line-height: 1.6;color:var(--fg);background-color:var(--bg);}		
 h1,h2,h3 {letter-spacing: -0.02em;line-height: 1.2; margin-bottom:0;} 
-h1 {font-size: clamp(1.5em, 7vw, 3em);}
+h1 {font-size: clamp(1.5em, 7vw, 3em); margin-bottom:.8em;}
 h1 span{ font-size: 1rem; font-weight: normal; display:block; letter-spacing:0;}
 
 a{color:var(--fg);text-decoration:none;font-style:normal;font-weight: 600;}

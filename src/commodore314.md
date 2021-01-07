@@ -3,7 +3,7 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 altTitle: "The Commodore 314."
-date: last modified
+date: 2021-01-03
 order: -1
 description: "a raspberry pi inside a dead C64 breadbin."
 navi:

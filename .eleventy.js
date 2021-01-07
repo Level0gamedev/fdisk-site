@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("sortByOrder", function(values) {
 	let vals = [...values];     // this *seems* to prevent collection mutation...
-     return vals.slice().sort((a, b) => a.data.order -b.data.order)
+     return vals.slice().sort((a, b) => Math.sign(a.data.order -b.data.order))
   });
   
   
