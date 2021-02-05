@@ -43,7 +43,11 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("splitWords", function(str) {
     // finds uppercase letters in camel case strings and inserts a whitespace character
     // e.g. oldMansJourney returns old Mans Journey
-    return str.replace(/([A-Z])/g,' $1')  
+  return str.replace(/([A-Z])/g,' $1')  
+  });
+  
+  eleventyConfig.addFilter("removeUnderscore", function(str) {
+	return str.replace(/_/g,' $1')  
   });
 
   eleventyConfig.addFilter("capitalize", function(str) {

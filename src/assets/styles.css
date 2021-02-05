@@ -13,7 +13,7 @@ header{margin:0 auto;display:flex;}
 body{font-family: var(--font_sans);max-width: 808px;padding: 0 15px;margin: 8px auto;line-height: 1.6;color:var(--fg);background-color:var(--bg);}		
 h1,h2,h3 {letter-spacing: -0.02em;line-height: 1.2; margin-bottom:0;} 
 h1 {font-size: clamp(1.5em, 7vw, 3em); margin-bottom:.8em;}
-h1 span{ font-size: 1rem; font-weight: normal; display:block; letter-spacing:0;}
+h1 span{ font-size: 1rem; font-style:italic;font-weight: normal; display:block; letter-spacing:0;}
 
 a{color:var(--fg);text-decoration:none;font-style:normal;font-weight: 600;}
 
@@ -26,11 +26,12 @@ header div {max-height:40px; display:flex; flex:1;  align-items:flex-end; backgr
 header nav a{color: var(--bg);font-weight: 400;}
 header nav {padding: 2 0;margin-bottom:3px;padding-left:8px;font:16px var(--font_mono);} 
 
-article,main nav{padding:1em 7.37%;}	
+article,main nav{padding:1em 7.37%;}
+article a{font-weight: 500;}
 article a[href*='/']::before{content:"{"}
 article a[href*='/']::after{content:"}"}
 article a[href*='//']::before{content:"["}
-article a[href*='//']::after{content:"↗]"}
+article a[href*='//']::after{content:"]"}
 article a:hover{background-color:var(--fg);color:var(--bg);}
 
 main nav{padding-top:0;}
@@ -45,7 +46,7 @@ hr{border-style:none none dotted;margin:0px;}
 
 code, pre{overflow:auto;background:var(--bg_acc);padding:10px}
 code{padding:2px}
-blockquote{font-style:italic;}
+blockquote{font-style:italic;line-height:1.2;padding-left:1em;border-left:4px solid var(--fg);}
 		
 figure{margin:0;}
 figcaption{margin-bottom:40px;}
@@ -80,6 +81,8 @@ ul{margin:4px 0px;}
 .nav-arrow{ width: 20px; font-size:16px; float: right;}
 
 details{background-color:var(--bg_acc);padding: 12px;}
+
+.footnotes-list{padding-left: 0px;font-size:13px;}
 
 @media (min-width: 600px) {
 article p {text-align: justify; text-justify: inter-word;}

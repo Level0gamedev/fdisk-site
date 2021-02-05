@@ -30,7 +30,7 @@ I didn't choose a theme, so 2020 did it for me - the year of COVID. Truth is, th
 ### things of note:
 * received BFA degree in New Media & Design.
 * joined [merveilles](https://merveilles.town/@FredBednarski) and (virtually) met many amazing people.
-* [built ƒdisk](/thisSite) after almost two decades of not touching html.
+* [built ƒdisk](/siteColophon) after almost two decades of not touching html.
 * deleted facebook, left twitter & generally limited social media.
 * changed my eating habits and started improving my weight.
 * managed to keep "my head above water" during a pandemic.

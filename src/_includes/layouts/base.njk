@@ -40,8 +40,9 @@
      <a href="/" class="shadow logo"><img src="{{ "/" | url }}assets/icons/fb_logo.svg" width="40px" class="bg{{kolor}}" /></a>
       <div class="top-bar shadow">
 		<nav>
+			
 			{% set path = collections.all | naviBreadcrumb(navi.key) %}
-			//{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(kolor) | random %}<a class="text{{ kolor }}" href="{{ dir.url }}">{{ dir.key }}</a>/{%- endfor %}{{navi.key}}:<span class="blink_me">_</span>
+			{% if path.length > 3 %}{% set path = path.slice(-3) %}../{% else %}//{% endif %}{%- for dir in path %}{% set kolor = [1, 2, 3 ] | removeVal(kolor) | random %}<a class="text{{ kolor }}" href="{{ dir.url }}">{{ dir.key }}</a>/{%- endfor %}{{navi.key}}:<span class="blink_me">_</span>
 		</nav>
       </div>
     </header>

@@ -66,3 +66,6 @@ As it is a flash game, and flash is going away it might be a better idea to use 
 
 ## [1213 (PC, early 2000s?)](http://www.fullyramblomatic.com/1213/)
 **spark memory:** Another World, but you're a patient with powers escaping a grey facility.
+
+## [Fuel (PC, 2010s)](http://roguebasin.roguelikedevelopment.org/index.php?title=Fuel)
+**spark memory:** Lonely low-rez astronaut running out of fuel
