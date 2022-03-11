@@ -16,7 +16,7 @@ navi:
   parent: digital
   excerpt: tiny narratives.
   icon: cartridge
-  cover: houseOTliving
+  cover: houseOTliving.png
   pixelize: true
 ---
 The projects here are made with [Bitsy](https://ledoux.itch.io/bitsy), a simple, browser-based engine for making small, narrative games. There's a whole [universe of bitsy games](https://itch.io/games/tag-bitsy) out there, filled with quirky narratives, personal stories and all kinds of amazing experiences. Bitsy's simplicity and tight constrains sparks creativity in many, this is how it sparked mine: 

@@ -23,4 +23,6 @@ Also, I got some advice from a person who used those kind of simple mimeographs.
 
 They refer to RISO inks that come in a tube. You can still but them as new old stock, but I want to test some contemporary inks first. 
 
+I have also seen acrylic paint mixed into nori paste base used and spread using a squeegee.
+
 More info will follow.

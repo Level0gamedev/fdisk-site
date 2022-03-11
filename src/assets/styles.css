@@ -10,8 +10,8 @@
 --font_mono:Fira Code,Monaco,Consolas,Ubuntu Mono,monospace;
 }
 header{margin:0 auto;display:flex;}
-body{font-family: var(--font_sans);max-width: 808px;padding: 0 15px;margin: 8px auto;line-height: 1.6;color:var(--fg);background-color:var(--bg);}		
-h1,h2,h3 {letter-spacing: -0.02em;line-height: 1.2; margin-bottom:0;} 
+body{font-family: var(--font_sans);max-width: 808px;padding: 0 15px;margin: 8px auto;line-height: 1.5;color:var(--fg);background-color:var(--bg);}		
+h1,h2,h3 {letter-spacing: -0.02em;line-height: 1.2; margin-bottom:-8px;} 
 h1 {font-size: clamp(1.5em, 7vw, 3em); margin-bottom:.8em;}
 h1 span{ font-size: 1rem; font-style:italic;font-weight: normal; display:block; letter-spacing:0;}
 
@@ -26,16 +26,17 @@ header div {max-height:40px; display:flex; flex:1;  align-items:flex-end; backgr
 header nav a{color: var(--bg);font-weight: 400;}
 header nav {padding: 2 0;margin-bottom:3px;padding-left:8px;font:16px var(--font_mono);} 
 
-article,main nav{padding:1em 7.37%;}
-article a{font-weight: 500;}
+article,main nav{padding:1em clamp(25px, 7.37%, 42px);}
+article a{font-weight: 600;}
 article a[href*='/']::before{content:"{"}
 article a[href*='/']::after{content:"}"}
 article a[href*='//']::before{content:"["}
 article a[href*='//']::after{content:"]"}
 article a:hover{background-color:var(--fg);color:var(--bg);}
 
+
 main nav{padding-top:0;}
-main nav ul{list-style-type:none;margin:0;padding:0;font-size:16px;font-weight:bold;width:100%;white-space:nowrap;}
+main nav ul{list-style-type:none;margin:0;margin-top:-1em;padding:0;font-size:16px;font-weight:bold;width:100%;white-space:nowrap;}
 main nav span{font-weight:400;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-top:2px;}
 main nav time{margin-left:auto;font-weight:400;font-size:14px;display:block;}
 
@@ -77,7 +78,7 @@ a[href].direct-link:focus,:hover > a[href].direct-link,:hover > a[href].direct-l
 
 .cover{width:100%; padding:0;margin-bottom:-3em;background-color:var(--bg);}
 
-ul{margin:4px 0px;}
+
 .nav-arrow{ width: 20px; font-size:16px; float: right;}
 
 details{background-color:var(--bg_acc);padding: 12px;}

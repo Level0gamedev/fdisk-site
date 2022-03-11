@@ -3,7 +3,7 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 description: "tabletop gaming projects & assorted shenanigans."
-date: 2020-11-27
+date: last modified
 order: 9
 tags: 
   - all
@@ -13,6 +13,6 @@ navi:
   excerpt: "physical games, physical tables!"
 ---
 
-I used to follow the boardgame/RPG world much closer in the past, but as my tastes matured (or maybe I just got old?), I stopped carrying about the "new hotness" and got much pickier about my tabletop experiences. Nowadays I prefer thematic games with tight rules. When I play, I want to be able to immerse myself in the story and explore the game's world, not fight the mechanical systems. The rules should reinforce the narrative or at least get out of the way. 
+Board games, RPGs, wargames? Been there, rolled the dice. In fact, I got into tabletop games soon after [digital ones](/digital) and never really stopped. Over time I found that I enjoy light, but thematic games much more than a set of rules I can master. It's more about the experience than winning. 
 
-This is the kind of stuff you'll find inside here -  designs and musing on rules-lite thematic games.
+So, this is the kind of stuff in here -  designs and musing on rules-lite & thematic games.

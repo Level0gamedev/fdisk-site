@@ -14,5 +14,5 @@ navi:
 
  
 
-<div style="text-align:right; margin-bottom:-21px;"><img src="{{ "/" | url }}assets/img/author.png" width="44%"> </div>	
+<div style="text-align:right; margin-bottom:-4px;"><img src="{{ "/" | url }}assets/img/author.png" width="44%"> </div>	
 

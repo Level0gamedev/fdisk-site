@@ -1,0 +1,35 @@
+---
+layout: layouts/page.njk
+templateEngineOverride: njk,md
+hideTitle: false
+description: a fiction-first kriegspiel-pop! 
+date: last modified
+order: -1
+altTitle: "Freeform Kommander." 
+tags:
+  - wargame
+navi:
+  key: FreeformKommander
+  parent: tabletop
+  excerpt: narrative wargaming system.
+  icon: book
+---
+**Freeform Kommander** is a set of rules for playing grand scale campaigns - military or otherwise. Step into the shoes of a leader and command your forces from afar: analyze the situation, make decisions and let the simple fiction-first ruleset show your how they play out. So, grab a scenario & some game pieces and get ready to command your troops!
+
+
+## Features:
+* **Fiction First:** The game rewards you for thinking within the fiction.  
+
+* **Kriegspiel Aesthetic:** Designed to be played with wooden blocks on a map to reinforce the idea of commanding your troops from afar. Wooden block forces are easy to DIY and have fog of war "built in." Also, they just looks really cool on a nice map!
+
+* **Arcade-like simplicity:** Measure with your fingers, use elements of the fiction to mitigate luck and roll some dice (or don't - you can always opt to take half of dice value). Make decisions and see how they play out instead of tracking bunch of fiddly bits.
+
+* **Scale Independent:** Each element is a force of hundreds of troops and can be represented by anything from a painted wood block, a miniature stand, or even a paper print-out. As long as all players use elements with size/frontage that is "close enough", you're good to go.
+
+* **Setting Independent:** FK is created with fantastical battles in mind, but can handle pretty much anything you throw at it. If you have bunch of units interacting with one another in a relatively short range, you can use those rules pretty much straight out of the box.
+
+* **Endlessly Customizable:** Units are described by a die type (d4-d12) and . Make any units you want by combining existing traits or create new ones to fit your needs. The simple rules make designing special maps, scenarios and expansions a breeze. 
+
+* **DIY Mentality:** Create your armies, draw your own maps, make your own play pieces and write your own extra rules. FK is a system that you can (and should!) tweak to your grand scale campaign needs.
+
+The game requires a set of standard RPG dice, 

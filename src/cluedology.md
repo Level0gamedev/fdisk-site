@@ -11,8 +11,8 @@ tags:
   - research
 navi:
   key: cluedology
-  parent: tabletop
-  excerpt: thinking about deduction games.
+  parent: tabletopMusings
+  excerpt: deep dive into deduction games.
 ---
 I am somewhat torn about Clue (or Cluedo, if you're in UK). I really love the theme of a classic whodunit mystery in a big mansion and the deduction mechanic is both simple and fun. Where it breaks down for me is the roll-and-move. I don't even mind the luck element (after all, rolling dice is fun!), but it slows down the game way too much. It feels like it was added just because rolling dice and moving pawns is what board games were about at the time. All it adds to the game is frustration and wasted turns. I mean, I will still play it, but I think there has to be a better way - so, I decided to do a deep dive and see what else is out there.
 

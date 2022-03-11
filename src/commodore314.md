@@ -10,7 +10,7 @@ navi:
   key: "commodore314"
   parent: digital
   excerpt: "C64 emulation station"
-  cover: c314
+  cover: c314.png
 tags:
   - retro 
   - hardware

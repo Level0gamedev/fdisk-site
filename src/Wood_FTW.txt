@@ -10,7 +10,7 @@ tags:
   - wargame
 navi:
   key: Wood_FTW
-  parent: FrivolousTabletopWarfare
+  parent: Freeform-esque
   excerpt: wooden blocks explained.
   keepTogether: true
 ---

@@ -11,7 +11,7 @@ navi:
   key: annual
   parent: personal
   excerpt: "yearly themes and noteworthy things"
-  cover: annual2021
+  cover: annual2021.png
 ---
 <h1 style="margin-top:-1em;">The Annual.<span>a chronicle of annual themes and noteworthy things.</span></h1>
 
@@ -27,7 +27,7 @@ This year's theme, *preservation*, is a response to what 2020 brought. It's a re
 
 I didn't choose a theme, so 2020 did it for me - the year of COVID. Truth is, the pandemic didn't hit me as bad as it did others, but it was still not a good year by any means. It was stagnant and depressing and I ended up going through bulk of it on auto-pilot.
 
-### things of note:
+### 2020 things of note:
 * received BFA degree in New Media & Design.
 * joined [merveilles](https://merveilles.town/@FredBednarski) and (virtually) met many amazing people.
 * [built ƒdisk](/siteColophon) after almost two decades of not touching html.

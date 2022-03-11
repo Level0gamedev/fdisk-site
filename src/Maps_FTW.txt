@@ -3,14 +3,14 @@ layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
 description: the why and how of playing on a map. 
-date: 2020-12-21
+date: 2020-12-18
 order: -1
 altTitle: "Battlefield Maps FTW!" 
 tags:
   - wargame
 navi:
   key: Maps_FTW
-  parent: FrivolousTabletopWarfare
+  parent: Freeform-esque
   excerpt: battlefields explained.
   keepTogether: true
 ---

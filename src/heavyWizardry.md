@@ -14,7 +14,7 @@ navi:
   parent: tabletop
   excerpt: upcoming VR hacktivism RPG
   icon: book
-  cover: hwCover
+  cover: hwCover.png
 ---
 
 > <b>heavy wizardry:</b> hacker jargon, n. Code or designs that trade on a particularly intimate knowledge or experience of a particular operating system or language or complex application interface.

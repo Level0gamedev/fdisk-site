@@ -22,4 +22,6 @@ Another approach is to find some chemical that we can brush onto paper to create
 
 Last resort is using silkscreen. Drawing Fluid seems more accessible (as it doesn't require a transparency and special UV curing). In a perfect world, we could recreate the Japanese [Easy Silk Printing](https://gigazine.net/gsc_news/en/20140720-diy-book-print) using Sun Drawing emulsion, but this is not available in US/Europe. 
 
-Proper testing and info coming soon. 
+---
+
+My first tests using wax paper failed to print. I think the issue is that the contemporary wax paper is coated with wax on both sides. I am planning to doing few more experiments to compensate for that soon.

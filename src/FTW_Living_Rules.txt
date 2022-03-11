@@ -4,14 +4,14 @@ templateEngineOverride: njk,md
 hideTitle: false
 includeToc: true
 description: playing war with wood. 
-date: 2020-12-30
+date: last modified
 order: -1
 altTitle: "FTW! Living Rules" 
 tags:
   - wargame
 navi:
   key: FTW_Living_Rules
-  parent: FrivolousTabletopWarfare
+  parent: Freeform-esque
   excerpt: the eternal draft.
   keepTogether: true
 ---
@@ -25,9 +25,9 @@ FTW! is a Kriegsspiel inspired mass battle wargame played with wooden pieces on 
 
 * You need wooden play pieces, a map/battlefield and a set of polyhedral dice (d4-d12).
 
-*  Each piece represents hundreds of soldiers. To differentiate units, each is painted in player's color and is labelled with a name, its class (a die type) and icons representing its traits (if any). Use the unit's class die type for all of its actions.
+*  Each piece represents anywhere between dozes to hundreds of men. To differentiate units, each is painted in player's color and labelled with a name. Use the unit's class die type for all of its actions.
 
-* An average medium infantry unit is d8 class without any traits. Units of lower class/die type are better in combat, but move slower. The opposite is true for higher class units. Traits let units bend the rules of the game.
+* An average medium infantry unit is d8 class without any special abilities. Units of lower class/die type are better in combat, but move slower. The opposite is true for higher class units. Traits let units bend the rules of the game.
 
 * **Whenever you would roll, you can instead take half of the die value (e.g 5 for d10).**
 
@@ -48,20 +48,20 @@ FTW! is a Kriegsspiel inspired mass battle wargame played with wooden pieces on 
  
 ## Introduction
 
-Welcome Frivolous Tabletop Warlord!
+Welcome Freeform Kommander!
 
-These rules let you step in the shoes of a general commanding vast armies in grand scale battles. Each piece under your control is a force of hundreds strong. Each turn represents hours in the life of your troops. At such scale it's pointless trying to track individual soldiers, exact distances and other minutia - from where you sit, the war looks very much like wooden pieces on a map.
+These rules let you step in the shoes of a leader commanding troops in grand scale campaigns. Each piece under your control is a force of hundreds strong. Each turn represents hours in the life of your troops. At such scale it's pointless trying to track individual soldiers, exact distances and other minutia - from where you sit, the war looks very much like wooden pieces on a map.
 
 The rules reflect that. They are purposely simple and loose to simulate the fact that you are not there on the ground, leading each battle. Your focus is on the big picture, using your smarts to mitigate luck and turn the tides in your favor. However, even best laid plans can fail, and even the most dire odds can bring unexpected results. Nothing is certain.
 
-To simulate this, almost all actions in FTW! are based of a die roll. Even something as simple as moving from point A to point B becomes an ordeal when you need to account for hundreds of troops. Of course, you can always choose to play it safe, giving your troops an order you know they can achieve with time and manpower to spare. You do this by skipping the roll and taking half of its possible value. Choosing when to play it safe and when to risk it is just one of the many decisions you'll have to make each turn.
+To simulate this, almost all actions in FK are based of a die roll. Even something as simple as moving from point A to point B becomes an ordeal when you need to account for hundreds of troops. Of course, you can always choose to play it safe, giving your troops an order you know they can achieve with time and manpower to spare. You do this by skipping the roll and taking half of its possible value (e.g 5 on d10). Choosing when to play it safe and when to risk it is just one of the many decisions you'll have to make each turn.
 
-Because at it's core, FTW! is a game about decisions. The fun, depth and complexity comes not from following an elaborate set of rules and tracking minute details, but from making a call and seeing how it plays out. 
+Because at it's core, this is a game about decisions. The fun, depth and complexity comes not from following an elaborate set of rules and tracking minute details, but from analyzing the situation, making a call and seeing how it plays out. 
 
 ## What you need to play?
-* **The Units:** Grab some [Wooden Blocks](/Wood_FTW). They should all be the same size (at least for rank and file troops) and easily identifiable - painting blocks single color and attaching a sticker designating unit type on one side will do the trick. The block size I'm currently using is 1x⅜x⅜ inches. A good size force is somewhere between 15-20 blocks.
+* **The Units:** Grab some [Wooden Blocks](/Wood_FTW). They should all be the same size (at least for rank and file troops) and easily identifiable - painting blocks single color and attaching a sticker designating its name and unit type on one side will do the trick. The block size I'm currently using is 1x⅜x⅜ inches. A good size force is somewhere between 15-20 blocks.
 
-* **The Battlefield:** You need a [map](/Maps_FTW) with clearly marked terrain to represent your battlefield. The maps should make sense scale-wise with the size of the wooden blocks. You'll want around 2x2 feet of playing space for the default block/force sizes, but feel free to go larger.
+* **The Battlefield:** You need a [map](/Maps_FTW) with clearly marked terrain to represent the area your game will take place in. The maps should make sense scale-wise with the size of the wooden blocks. You'll want around 2x2 feet of playing space for the default block/force sizes, but feel free to go larger.
 
 * **The Dice:** Lastly, grab a set of RPG dice. Die types are unit classes - a unit uses that type of die for all its rolls. When moving, you want to roll high, and when fighting you want to roll low. You only need one of each type of die, but having more will speed things up.
 

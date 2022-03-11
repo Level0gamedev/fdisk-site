@@ -2,7 +2,7 @@
 layout: layouts/page.njk
 templateEngineOverride: njk,md
 hideTitle: false
-date: last modified
+date: 2021-02-05
 order: -1
 altTitle: "The Galaxie II."
 description: "a mid-century modern mechanical marvel."
@@ -13,7 +13,7 @@ navi:
   keepTogether: true
   parent: typewriter
   excerpt: my first typewriter.
-  cover: galaxie2
+  cover: galaxie2.png
 ---
 
 The **Smith-Corona Galaxie II** is my first typewriter. It's a popular 196X machine sporting a lovely mid-century design with a dash of googie on the faceplate. This faceplate and the inclusion of a single changeable type key (red 1/!) are the only differences between this and previous model... well, that and the gimmicky "jeweled escapement".^[The jewel in the escapement is said to be a synthetic ruby or sapphire, but who can say for sure with 60s marketing. [Issue 114 of ETC Magazine](https://etconline.org/backissues/ETC114.pdf) did a deep dive into the history and usefulness of that little jewel, and is worth a read]  

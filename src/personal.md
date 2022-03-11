@@ -13,3 +13,4 @@ navi:
   excerpt: "life, universe and everything else."
 ---
 
+This is a bit of a catch all space for all the things that don't really fit anywhere else on ƒdisk — things relating to me and my IRL surroundings. It's not really about personal stuff with capital P, or even a blog, more of a collection all the mundane things that I want to document, work on or preserve. 
